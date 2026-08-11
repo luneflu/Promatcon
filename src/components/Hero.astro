@@ -1,0 +1,26 @@
+---
+import heroImage from "../assets/hero.webp";
+---
+<section class="hero min-h-[600px] bg-primary-container text-primary-content relative">
+    <div class="absolute inset-0 z-0 bg-black">
+        <img src={heroImage.src} alt="Offshore oil rig at sunset" class="w-full h-full object-cover opacity-20" />
+    </div>
+    
+    <div class="hero-content text-left relative z-10 w-full max-w-7xl justify-start">
+        <div class="max-w-3xl py-20">
+            <span class="badge badge-accent mb-4 p-3 font-bold uppercase tracking-widest text-xs">Industrial Excellence</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">End-to-End Industrial EPCI & Engineering Solutions</h1>
+            <p class="text-lg md:text-xl text-primary-content/80 mb-10 max-w-2xl leading-relaxed">
+                From concept design and manufacturing to site installation, commissioning, and operator training. Delivering robust structural integrity and unwavering professional competence.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#services" class="btn btn-secondary">
+                    Explore Our Solutions
+                </a>
+                <a href="#experience" class="btn btn-outline btn-neutral text-white border-slate-400 hover:bg-white/10 hover:border-slate-300">
+                    View Project Experience
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

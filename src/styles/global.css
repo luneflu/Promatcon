@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "promatcon";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-primary: #12538b;
+  --color-primary-content: #ffffff;
+  --color-secondary: #02c05e;
+  --color-secondary-content: #ffffff;
+  --color-accent: #ffd700;
+  --color-accent-content: #191c1d;
+  --color-neutral: #191c1d;
+  --color-neutral-content: #ffffff;
+  --color-base-100: #ffffff;
+  --color-base-200: #f8f9fa;
+  --color-base-300: #e1e3e4;
+  --color-base-content: #191c1d;
+  --color-info: #002147;
+  --color-info-content: #ffffff;
+  --color-success: #ba1a1a;
+  --color-success-content: #ffffff;
+  --color-warning: #ffd700;
+  --color-warning-content: #191c1d;
+  --color-error: #ba1a1a;
+  --color-error-content: #ffffff;
+
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  --border: 1px;
+
+  --depth: 0;
+  --noise: 0;
+}
