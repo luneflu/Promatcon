@@ -1,0 +1,184 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { FontAwesomeIcon } from 'astro-fontawesome';
+import { faHistory, faChartLine, faHardHat, faCogs, faIndustry, faBoxOpen } from '@fortawesome/free-solid-svg-icons';
+import '../styles/global.css';
+
+const coreTeams = [
+  { title: "Construction Team", icon: faHardHat },
+  { title: "Engineering Team", icon: faCogs },
+  { title: "Fabrication Team", icon: faIndustry },
+  { title: "Procurement Team", icon: faBoxOpen },
+];
+
+const operations = [
+  {
+    title: "Up Stream",
+    subtitle: "Exploration & Production",
+    items: ["Offshore Exploration", "Onshore Exploration", "Surface Facilities"],
+  },
+  {
+    title: "Mid Stream",
+    subtitle: "Transport & Storage",
+    items: ["Oil and Gas Pipe Transfer Lines", "FPSO (Floating Production Storage)", "Tankers"],
+  },
+  {
+    title: "Down Stream",
+    subtitle: "Processing & Refining",
+    items: ["Crude Oil Refining Process", "Gas Processing", "Petrochemical"],
+  },
+];
+
+const directors = [
+  { title: "Engineering Director", name: "Ben Gadjuli" },
+  { title: "Operation Director", name: "Gunarso Sudoro" },
+  { title: "Finance Director", name: "Dian Hariyani" },
+];
+
+const managers = [
+  { title: "Procurement Manager", name: "David Martandi" },
+  { title: "H R D", name: "Suwito" },
+  { title: "Finance Manager", name: "Ventje" },
+  { title: "Engineering Manager", name: "Felix Trinaksa" },
+  { title: "Marketing Manager", name: "" },
+];
+
+const marketingDivisions = [
+  { title: "Compressor Division", name: "Adi Priyanto" },
+  { title: "Process Division", name: "Budi Nainggolan" },
+  { title: "Chemical Division", name: "Hendro Rahardjo" },
+  { title: "Civil Division", name: "Thomson & Darmawan" },
+  { title: "Pipe and Fittings Trading", name: "Singgih" },
+  { title: "Control System Integration", name: "Anhar Djamal" },
+];
+---
+
+<Layout title="About Us - PT. PROMATCON TEPATGUNA">
+  <Header />
+  <main class="space-y-16 py-12 px-4 sm:px-8 max-w-7xl mx-auto">
+    <!-- History & Evolution Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="card bg-base-100 border border-base-300 shadow-sm p-6 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="p-3 bg-primary/10 rounded-full text-primary">
+            <FontAwesomeIcon icon={faHistory} class="w-6 h-6" />
+          </div>
+          <h2 class="text-2xl font-bold text-primary m-0">The Beginning</h2>
+        </div>
+        <p class="text-base-content/80">
+          Established since 1990, starting only as Promatcon trading company, with main core in the sale of control equipment for pressure vessels, plates, pipes and fittings and valves.
+        </p>
+      </div>
+      <div class="card bg-base-100 border border-secondary/30 shadow-sm p-6 flex flex-col justify-center relative overflow-hidden">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="p-3 bg-secondary/10 rounded-full text-secondary">
+            <FontAwesomeIcon icon={faChartLine} class="w-6 h-6" />
+          </div>
+          <h2 class="text-2xl font-bold text-secondary m-0">The Evolution</h2>
+        </div>
+        <p class="text-base-content/80">
+          Presently, Promatcon has become a leading multinational company specializing in Engineering, Procurement Construction and Instalation EPCI.
+        </p>
+      </div>
+    </section>
+
+    <!-- Core Teams Section -->
+    <section class="bg-base-200 p-8 rounded-box">
+      <div class="mb-6">
+        <h2 class="text-3xl font-bold text-base-content">Our Specialized Teams</h2>
+        <div class="w-16 h-1 bg-secondary mt-2"></div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {coreTeams.map((team) => (
+          <div class="card bg-base-100 border border-base-300 p-6 flex flex-col justify-between hover:border-secondary transition-colors group">
+            <div class="flex justify-between items-start mb-4">
+              <div class="text-base-content/40 group-hover:text-secondary transition-colors">
+                 <FontAwesomeIcon icon={team.icon} class="w-8 h-8" />
+              </div>
+              <span class="badge badge-secondary badge-sm">Core Function</span>
+            </div>
+            <h3 class="text-xl font-bold text-base-content">{team.title}</h3>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Operational Focus Section -->
+    <section class="space-y-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold text-base-content">Operational Focus</h2>
+        <p class="text-base-content/70 mt-2 max-w-2xl mx-auto">
+          Specialized capabilities in Oil and Gas and Petrochemical equipments across the entire value chain.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {operations.map((op) => (
+          <div class="card bg-base-100 border border-base-300 border-t-4 border-t-accent shadow-sm p-6 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-bold text-primary">{op.title}</h3>
+              <p class="text-sm font-semibold text-secondary mb-4">{op.subtitle}</p>
+              <ul class="space-y-2 text-base-content/80">
+                {op.items.map((item) => (
+                  <li class="flex items-center gap-2">
+                    <span class="text-secondary font-bold">✓</span> {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Organizational Structure Section -->
+    <section class="bg-base-200 p-8 rounded-box">
+      <div class="mb-8 text-center">
+        <h2 class="text-3xl font-bold text-base-content">Organizational Structure</h2>
+        <div class="w-16 h-1 bg-secondary mx-auto mt-2"></div>
+      </div>
+      <div class="space-y-8 max-w-4xl mx-auto text-center">
+        <!-- Level 1 -->
+        <div class="inline-block card bg-base-100 border-2 border-primary p-4 shadow-sm min-w-[240px]">
+          <p class="text-xs uppercase font-bold text-primary">President Director</p>
+          <p class="text-lg font-semibold text-base-content">Adi Priyadi</p>
+        </div>
+
+        <!-- Level 2 -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {directors.map((d) => (
+            <div class="card bg-base-100 border border-secondary p-4 shadow-sm">
+              <p class="text-xs uppercase font-bold text-secondary">{d.title}</p>
+              <p class="text-base font-semibold text-base-content">{d.name}</p>
+            </div>
+          ))}
+        </div>
+
+        <!-- Level 3 -->
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+          {managers.map((m) => (
+            <div class={`card border p-3 text-sm ${m.title === "Marketing Manager" ? "bg-secondary text-secondary-content border-secondary font-bold" : "bg-base-100 border-base-300"}`}>
+              <p class="font-bold">{m.title}</p>
+              {m.name && <p class="text-xs opacity-90">{m.name}</p>}
+            </div>
+          ))}
+        </div>
+
+        <!-- Level 4: Under Marketing Manager -->
+        <div class="pt-4 border-t border-base-300">
+          <p class="text-xs uppercase font-bold text-base-content/60 mb-4">Marketing Divisions</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+            {marketingDivisions.map((div) => (
+              <div class="card bg-base-100 border border-base-300 p-3 text-left">
+                <p class="text-xs font-bold text-primary">{div.title}</p>
+                <p class="text-xs text-base-content/80">{div.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
