@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 import svelte from '@astrojs/svelte';
@@ -8,7 +8,18 @@ import svelte from '@astrojs/svelte';
 export default defineConfig({
   site: 'https://promatcon.lun.web.id',
 
-  clientRouter: true,
+  fonts: [
+    {
+      provider: fontProviders.fontsource(),
+      name: "IBM Plex Sans",
+      cssVariable: "--font-ibm-plex-sans",
+    },
+    {
+      provider: fontProviders.fontsource(),
+      name: "IBM Plex Mono",
+      cssVariable: "--font-ibm-plex-mono",
+    }
+  ],
 
   vite: {
     plugins: [tailwindcss()],
