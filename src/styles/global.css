@@ -10,32 +10,34 @@
   --color-primary-content: #ffffff;
   --color-secondary: #02c05e;
   --color-secondary-content: #ffffff;
-  --color-accent: #ffd700;
-  --color-accent-content: #191c1d;
-  --color-neutral: #191c1d;
+  --color-accent: #fece14;
+  --color-accent-content: #111827;
+  --color-neutral: #1f2937;
   --color-neutral-content: #ffffff;
   --color-base-100: #ffffff;
-  --color-base-200: #f8f9fa;
-  --color-base-300: #e1e3e4;
-  --color-base-content: #191c1d;
-  --color-info: #002147;
+  --color-base-200: #f8fafc;
+  --color-base-300: #e2e8f0;
+  --color-base-content: #0f172a;
+  --color-info: #0284c7;
   --color-info-content: #ffffff;
-  --color-success: #ba1a1a;
+  --color-success: #02c05e;
   --color-success-content: #ffffff;
-  --color-warning: #ffd700;
-  --color-warning-content: #191c1d;
-  --color-error: #ba1a1a;
+  --color-warning: #d97706;
+  --color-warning-content: #ffffff;
+  --color-error: #dc2626;
   --color-error-content: #ffffff;
 
   --radius-selector: 0.25rem;
   --radius-field: 0.25rem;
   --radius-box: 0.5rem;
 
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
-
   --border: 1px;
+}
 
-  --depth: 0;
-  --noise: 0;
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+code, kbd, samp, pre {
+  font-family: 'IBM Plex Mono', monospace;
 }

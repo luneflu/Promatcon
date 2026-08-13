@@ -5,7 +5,7 @@ import logo from "../assets/icon.webp";
 ---
 
 <header
-  class="navbar bg-primary text-primary-content sticky top-0 z-50 shadow-md"
+  class="navbar bg-primary text-primary-content sticky top-0 z-50 shadow-md font-sans"
 >
   <div class="flex-1">
     <a href="/" class="inline-flex items-center px-4 text-xl">
@@ -20,21 +20,29 @@ import logo from "../assets/icon.webp";
     </a>
   </div>
   <div class="flex-none hidden md:flex items-center">
-    <ul class="menu menu-horizontal px-1">
+    <ul class="menu menu-horizontal px-1 font-medium text-primary-content">
       <li><a href="/">Home</a></li>
       <li><a href="/about">About Us</a></li>
       <li><a href="#">Products & Services</a></li>
       <li><a href="#">Experience</a></li>
     </ul>
-    <a href="#" class="btn btn-secondary ml-4">Contact Us</a>
+    <a
+      href="#"
+      class="btn btn-secondary text-secondary-content ml-4 font-semibold"
+      >Contact Us</a
+    >
   </div>
   <div class="flex-none md:hidden dropdown dropdown-end">
-    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+    <div
+      tabindex="0"
+      role="button"
+      class="btn btn-ghost btn-circle text-primary-content"
+    >
       <FontAwesomeIcon icon={faBars} class="h-5 w-5" />
     </div>
     <ul
       tabindex="0"
-      class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base-content"
+      class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base-content font-medium"
     >
       <li><a href="/">Home</a></li>
       <li><a href="/about">About Us</a></li>

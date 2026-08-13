@@ -238,14 +238,14 @@ const operations = [
           </div>
           <h2 class="text-2xl font-bold text-primary m-0">The Beginning</h2>
         </div>
-        <p class="text-base-content/80">
+        <p class="text-base-content/80 leading-relaxed">
           Established since 1990, starting only as Promatcon trading company,
           with main core in the sale of control equipment for pressure vessels,
           plates, pipes and fittings and valves.
         </p>
       </div>
       <div
-        class="card bg-base-100 border border-secondary/30 shadow-sm p-6 flex flex-col justify-center relative overflow-hidden"
+        class="card bg-base-100 border border-base-300 shadow-sm p-6 flex flex-col justify-center relative overflow-hidden"
       >
         <div class="flex items-center gap-3 mb-4">
           <div class="p-3 bg-secondary/10 rounded-full text-secondary">
@@ -253,7 +253,7 @@ const operations = [
           </div>
           <h2 class="text-2xl font-bold text-secondary m-0">The Evolution</h2>
         </div>
-        <p class="text-base-content/80">
+        <p class="text-base-content/80 leading-relaxed">
           Presently, Promatcon has become a leading multinational company
           specializing in Engineering, Procurement Construction and Instalation
           EPCI.
@@ -262,7 +262,7 @@ const operations = [
     </section>
 
     <!-- Core Teams Section -->
-    <section class="bg-base-200 p-8 rounded-box">
+    <section class="bg-base-200 p-8 rounded-box border border-base-300">
       <div class="mb-6">
         <h2 class="text-3xl font-bold text-base-content">
           Our Specialized Teams
@@ -272,12 +272,12 @@ const operations = [
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {
           coreTeams.map((team) => (
-            <div class="card bg-base-100 border border-base-300 p-6 flex flex-col justify-between hover:border-secondary transition-colors group">
+            <div class="card bg-base-100 border border-base-300 p-6 flex flex-col justify-between hover:border-secondary transition-colors group shadow-sm">
               <div class="flex justify-between items-start mb-4">
-                <div class="text-base-content/40 group-hover:text-secondary transition-colors">
+                <div class="text-base-content/60 group-hover:text-secondary transition-colors">
                   <FontAwesomeIcon icon={team.icon} class="w-8 h-8" />
                 </div>
-                <span class="badge badge-secondary badge-sm">
+                <span class="badge badge-secondary badge-sm text-secondary-content font-bold">
                   Core Function
                 </span>
               </div>
@@ -300,7 +300,7 @@ const operations = [
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {
           operations.map((op) => (
-            <div class="card bg-base-100 border border-base-300 border-t-4 border-t-accent shadow-sm p-6 flex flex-col justify-between">
+            <div class="card bg-base-100 border border-base-300 border-t-4 border-t-secondary shadow-sm p-6 flex flex-col justify-between">
               <div>
                 <h3 class="text-2xl font-bold text-primary">{op.title}</h3>
                 <p class="text-sm font-semibold text-secondary mb-4">
@@ -321,7 +321,7 @@ const operations = [
     </section>
 
     <!-- Organizational Structure Section -->
-    <section class="bg-base-200 p-8 rounded-box">
+    <section class="bg-base-200 p-8 rounded-box border border-base-300">
       <div class="mb-8 text-center">
         <h2 class="text-3xl font-bold text-base-content">
           Organizational Structure
