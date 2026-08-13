@@ -19,6 +19,11 @@
     "astro-fontawesome": "^0.1.1",
     "daisyui": "^5.7.16",
     "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3",
     "viewerjs": "^1.11.8"
+  },
+  "devDependencies": {
+    "@astrojs/svelte": "^9.0.1",
+    "svelte": "^5.2.0"
   }
 }

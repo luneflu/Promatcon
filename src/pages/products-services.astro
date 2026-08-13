@@ -2,8 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import ProductsTabNav from '../components/products/ProductsTabNav.astro';
-import ProductGallery from '../components/products/ProductGallery.astro';
+import ProductGallery from '../components/products/ProductGallery.svelte';
 ---
 
 <Layout title="Products & Services | PT. PROMATCON TEPATGUNA">
@@ -19,8 +18,7 @@ import ProductGallery from '../components/products/ProductGallery.astro';
 				</p>
 			</div>
 
-			<ProductsTabNav />
-			<ProductGallery />
+			<ProductGallery client:load />
 
 		</div>
 	</main>
