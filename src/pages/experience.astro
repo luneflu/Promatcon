@@ -1,0 +1,137 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+
+const featuredProjects = [
+  {
+    client: "PT Chevron Pacific Indonesia",
+    logoUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCWjhfDi7KwG_GOvbBGM0NUz_FZPJikIRFXrWYJEvHtSsJTb-N2SHNlHoxdHCDosKkmjZ45ApzG7lTAr-iuueToMEI-iqmx7OGewmaclWDJwHSYEXEnSRpkrsHwUwoB4txsPpCJ429No4iG6fGq4AnnaOtwQnFF0v1pKgJW_A5yiBnF7fCzczDiiYUkttJJag4tSNJRx_-VXeBTd_a4RFrqLc6EcBmkp0p3UOfTeJnlPRH8g95Hm7VP0ejR_UXng9oJJQ",
+    description: "Supply of 16 Unit Test Tank and 3 Unit Pressure Vessel",
+    delivery: "Warehouse Bekasap",
+    contract: "13441 R3WHBKS"
+  },
+  {
+    client: "PT HESS (Indonesia-Pangkah) Ltd",
+    logoUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDiJ260-1Bgg5i0oZmg60xqp95kcGOeMY0lo1dVoqDuX9BYumEOu0SGIcER3LO4Ob6dW3NEdbfkIeUykdlo_bJgskkTZSXmGc09Zc_-AdubPtXQn3pDFjBfjck23W6aOM3BhHmQXoIymRJM3bUn3BcwXWZcN2Oi3yBNuzixsdrmcNdmoO24BcJgiu486YH3SKFNhlvX3JlC1vrwEyVzzTeyVW4_zkE-E-MXmTemsj9IK5RKJzXr9mRloSWKpKA_fqF4dQ",
+    description: "Supply of Pressure Vessel",
+    delivery: "DDU HIPL Warehouse Batam",
+    contract: "4500190954"
+  }
+];
+
+const years = [2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013];
+
+const historicalProjects2013 = [
+  { no: 1, date: "13/01/2013", client: "Total E&P Indonesia", contract: "4300020410", subject: "Surfactant For Capillary String 2013" },
+  { no: 2, date: "15/01/2013", client: "Total E&P Indonesia", contract: "4300020278", subject: "Provision of Surfactant Tank for Capillary String" },
+  { no: 3, date: "01/02/2013", client: "Vico Indonesia", contract: "130273", subject: "Pressure Vessel Separator, Fuel Gas Filter, and Heat Exchanger" },
+  { no: 4, date: "11/03/2013", client: "PT. Pertamina EP Sangata", contract: "4500099316", subject: "Pengadaan 2 (Dua) Unit Filter KAP. 15.000 BPD C/W PUMP. KAP. 100 M3/H Untuk Kebutuhan Penanganan Air" },
+  { no: 5, date: "01/05/2013", client: "PT. Pertamina Hulu Energi WMO", contract: "9420004476", subject: "Assessment OF Hydrocyclone" },
+  { no: 6, date: "17/06/2013", client: "PT. Ogan Interior Gas", contract: "PO/019/OIG/VI/2013", subject: "Supply Of Diesel Storage Tank" },
+  { no: 7, date: "21/06/2013", client: "Advanced Separation Company(ASCOM)", contract: "LOI NO. H1205-407", subject: "Off Twin Line Separator" },
+  { no: 8, date: "28/06/2013", client: "Petrochina Int'l Jabung LTD", contract: "17525/01/00261", subject: "1 Set Filter Element Strainer" },
+  { no: 9, date: "04/07/2013", client: "Vico Indonesia", contract: "PO131915", subject: "One Package Compressor Capacity 7 MMSCFD" },
+  { no: 10, date: "-", client: "PT. Medco CBM Sekayu", contract: "TENDER NO. BF7017-1", subject: "Jasa Pengadaan, Instalasi dan Commisioning dua (2) Unit Vessel Lengkap PCV dan LCV serta Meter Diatas Skid Untuk Proyek Gathering Medco CBM Sekayu" },
+  { no: 11, date: "21/02/2013", client: "PT. Pertamina EP JO PT. Sekki Parama", contract: "4500092487", subject: "4 Unit Wellhead Compressor" },
+  { no: 12, date: "05/08/2013", client: "Vico Indonesia", contract: "PO132225", subject: "2 Unit Compressor Movable Gas Recovery" },
+  { no: 13, date: "23/09/2013", client: "PT. Pertamina Hulu Energi ONWJ", contract: "21301673", subject: "1 Unit Pig Receiver" },
+  { no: 14, date: "-", client: "PT Chevron Pacific Indonesia", contract: "13441 R3WHBKS", subject: "Supply of 16 Unit Test Tank and 3 Unit Pressure Vessel (Warehouse Bekasap)" },
+  { no: 15, date: "-", client: "PT HESS (Indonesia-Pangkah) Ltd", contract: "4500190954", subject: "Supply of Pressure Vessel (DDU HIPL Warehouse Batam)" }
+];
+---
+
+<Layout title="Experience - PT. PROMATCON TEPATGUNA">
+  <Header />
+  <main class="flex-grow w-full max-w-[1440px] mx-auto px-4 md:px-16 py-12">
+    <!-- Header Section -->
+    <div class="mb-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-semibold text-base-content mb-2 tracking-tight">Experience</h1>
+      <p class="text-lg text-base-content/70 max-w-3xl mx-auto">
+        A comprehensive record of our engineering and logistical project deliveries across major industrial sectors.
+      </p>
+    </div>
+
+    <!-- Main Container Card -->
+    <div class="bg-base-100 border border-base-300 rounded-lg p-6 shadow-sm space-y-8">
+      
+      <!-- Featured Project Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {featuredProjects.map((project) => (
+          <div class="flex flex-col p-6 bg-base-200/50 border border-base-300 rounded-lg space-y-4">
+            <div class="flex items-center gap-4">
+              <div class="w-16 h-16 flex-shrink-0 bg-base-100 p-2 rounded border border-base-300 flex items-center justify-center">
+                <img src={project.logoUrl} alt={`${project.client} Logo`} class="w-full h-full object-contain" />
+              </div>
+              <h3 class="text-xl font-bold text-base-content">{project.client}</h3>
+            </div>
+            
+            <div class="space-y-3 pt-2">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-primary block">Project Description</span>
+                <p class="text-sm text-base-content/80 font-medium">{project.description}</p>
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-primary block">Time and Point of Delivery</span>
+                <p class="text-sm text-base-content/80 font-medium">{project.delivery}</p>
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-primary block">Contract No</span>
+                <p class="font-mono text-xs text-base-content/60">{project.contract}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Tabs Navigation for Years -->
+      <div class="w-full overflow-x-auto border-b border-base-300">
+        <div class="flex space-x-2 md:space-x-3 min-w-max pb-2">
+          {years.map((year) => (
+            <button
+              class={`px-4 py-2 text-sm font-semibold rounded-t-md transition-colors ${
+                year === 2013
+                  ? "bg-primary text-primary-content font-bold border-b-2 border-primary"
+                  : "text-base-content/60 hover:bg-base-200 bg-transparent"
+              }`}
+            >
+              {year}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <!-- Tab Content - 2013 Active Table -->
+      <div>
+        <div class="overflow-x-auto">
+          <table class="table table-zebra w-full min-w-[800px]">
+            <thead>
+              <tr class="bg-base-200 text-base-content/80 text-xs uppercase tracking-wider border-b border-base-300">
+                <th class="w-12">NO</th>
+                <th class="w-28">Date</th>
+                <th class="w-1/4">Client</th>
+                <th class="w-48">PO/Contract No</th>
+                <th>Subject</th>
+              </tr>
+            </thead>
+            <tbody class="text-sm">
+              {historicalProjects2013.map((row) => (
+                <tr class="hover:bg-base-200/50">
+                  <td class="font-mono text-xs opacity-60">{row.no}</td>
+                  <td class="font-mono text-xs whitespace-nowrap">{row.date}</td>
+                  <td class="font-semibold text-base-content">{row.client}</td>
+                  <td class="font-mono text-xs text-base-content/70">{row.contract}</td>
+                  <td class="text-base-content/90">{row.subject}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
