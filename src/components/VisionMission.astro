@@ -1,0 +1,74 @@
+---
+import { FontAwesomeIcon } from "astro-fontawesome";
+import {
+  faEye,
+  faBullseye,
+  faCheckCircle,
+} from "@fortawesome/free-solid-svg-icons";
+---
+
+<section
+  class="relative bg-primary text-primary-content rounded-box p-8 md:p-12 shadow-xl overflow-hidden"
+>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
+    <!-- Vision -->
+    <div class="flex flex-col">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="p-4 bg-base-100 text-primary rounded-full shadow-sm">
+          <FontAwesomeIcon icon={faEye} class="w-8 h-8" />
+        </div>
+        <h2 class="text-3xl font-bold m-0 tracking-tight">Vision</h2>
+      </div>
+      <p class="text-primary-content/90 text-xl leading-relaxed font-medium">
+        To become a leading company in providing support and services to major
+        players in the oil and gas & renewable energy (geothermal) industries in
+        Indonesia.
+      </p>
+    </div>
+
+    <!-- Mission -->
+    <div class="flex flex-col">
+      <div class="flex items-center gap-4 mb-6">
+        <div
+          class="p-4 bg-secondary text-secondary-content rounded-full shadow-sm"
+        >
+          <FontAwesomeIcon icon={faBullseye} class="w-8 h-8" />
+        </div>
+        <h2 class="text-3xl font-bold m-0 tracking-tight">Mission</h2>
+      </div>
+      <ul class="space-y-4 text-primary-content/90 text-lg">
+        <li class="flex items-start gap-3">
+          <FontAwesomeIcon
+            icon={faCheckCircle}
+            class="w-6 h-6 mt-1 shrink-0 text-secondary"
+          />
+          <span class="leading-relaxed"
+            >The company designs, develops, supplies and supports the oil, gas &
+            renewable energy (geothermal) businesses in Indonesia.</span
+          >
+        </li>
+        <li class="flex items-start gap-3">
+          <FontAwesomeIcon
+            icon={faCheckCircle}
+            class="w-6 h-6 mt-1 shrink-0 text-secondary"
+          />
+          <span class="leading-relaxed"
+            >Meet the highest performance standards set by customers to fulfill
+            the quality of work required to provide customer satisfaction.</span
+          >
+        </li>
+        <li class="flex items-start gap-3">
+          <FontAwesomeIcon
+            icon={faCheckCircle}
+            class="w-6 h-6 mt-1 shrink-0 text-secondary"
+          />
+          <span class="leading-relaxed"
+            >We promote Quality, Health, Safety, Environment and Reliability
+            on-time delivery and delivery within budget as the highest value in
+            our operations.</span
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
