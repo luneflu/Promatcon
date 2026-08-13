@@ -51,25 +51,30 @@ const operations = [
 
 <Layout title="About Us - PT. PROMATCON TEPATGUNA">
   <Header />
-  <main class="space-y-16 py-12 px-4 sm:px-8 max-w-7xl mx-auto">
+  <main class="mx-auto max-w-7xl space-y-16 px-4 py-12 sm:px-8">
     <!-- Page Header -->
-    <div class="text-center mb-10">
-      <h1 class="text-4xl md:text-5xl font-semibold text-base-content mb-2 tracking-tight">About Us</h1>
-      <p class="text-lg text-base-content/70 max-w-2xl mx-auto">
-        A leading multinational company specializing in Engineering, Procurement, Construction and Installation (EPCI).
+    <div class="mb-10 text-center">
+      <h1
+        class="text-base-content mb-2 text-4xl font-semibold tracking-tight md:text-5xl"
+      >
+        About Us
+      </h1>
+      <p class="text-base-content/70 mx-auto max-w-2xl text-lg">
+        A leading multinational company specializing in Engineering,
+        Procurement, Construction and Installation (EPCI).
       </p>
     </div>
 
     <!-- History & Evolution Section -->
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section class="grid grid-cols-1 gap-8 md:grid-cols-2">
       <div
-        class="card bg-base-100 border border-base-300 shadow-sm p-6 flex flex-col justify-center"
+        class="card bg-base-100 border-base-300 flex flex-col justify-center border p-6 shadow-sm"
       >
-        <div class="flex items-center gap-3 mb-4">
-          <div class="p-3 bg-primary/10 rounded-full text-primary">
-            <FontAwesomeIcon icon={faHistory} class="w-6 h-6" />
+        <div class="mb-4 flex items-center gap-3">
+          <div class="bg-primary/10 text-primary rounded-full p-3">
+            <FontAwesomeIcon icon={faHistory} class="h-6 w-6" />
           </div>
-          <h2 class="text-2xl font-bold text-primary m-0">The Beginning</h2>
+          <h2 class="text-primary m-0 text-2xl font-bold">The Beginning</h2>
         </div>
         <p class="text-base-content/80 leading-relaxed">
           Established since 1990, starting only as Promatcon trading company,
@@ -78,13 +83,13 @@ const operations = [
         </p>
       </div>
       <div
-        class="card bg-base-100 border border-base-300 shadow-sm p-6 flex flex-col justify-center relative overflow-hidden"
+        class="card bg-base-100 border-base-300 relative flex flex-col justify-center overflow-hidden border p-6 shadow-sm"
       >
-        <div class="flex items-center gap-3 mb-4">
-          <div class="p-3 bg-secondary/10 rounded-full text-secondary">
-            <FontAwesomeIcon icon={faChartLine} class="w-6 h-6" />
+        <div class="mb-4 flex items-center gap-3">
+          <div class="bg-secondary/10 text-secondary rounded-full p-3">
+            <FontAwesomeIcon icon={faChartLine} class="h-6 w-6" />
           </div>
-          <h2 class="text-2xl font-bold text-secondary m-0">The Evolution</h2>
+          <h2 class="text-secondary m-0 text-2xl font-bold">The Evolution</h2>
         </div>
         <p class="text-base-content/80 leading-relaxed">
           Presently, Promatcon has become a leading multinational company
@@ -97,29 +102,29 @@ const operations = [
     <VisionMission />
 
     <!-- Core Teams Section -->
-    <section class="bg-base-200 p-8 rounded-box border border-base-300">
+    <section class="bg-base-200 rounded-box border-base-300 border p-8">
       <div class="mb-6">
-        <h2 class="text-3xl font-bold text-base-content">
+        <h2 class="text-base-content text-3xl font-bold">
           Our Specialized Teams
         </h2>
-        <div class="flex gap-1 mt-2">
-          <div class="w-12 h-1 bg-primary"></div>
-          <div class="w-40 h-1 bg-secondary"></div>
+        <div class="mt-2 flex gap-1">
+          <div class="bg-primary h-1 w-12"></div>
+          <div class="bg-secondary h-1 w-40"></div>
         </div>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {
           coreTeams.map((team) => (
-            <div class="card bg-base-100 border border-base-300 p-6 flex flex-col justify-between hover:border-secondary transition-colors group shadow-sm">
-              <div class="flex justify-between items-start mb-4">
+            <div class="card bg-base-100 border-base-300 hover:border-secondary group flex flex-col justify-between border p-6 shadow-sm transition-colors">
+              <div class="mb-4 flex items-start justify-between">
                 <div class="text-base-content/60 group-hover:text-secondary transition-colors">
-                  <FontAwesomeIcon icon={team.icon} class="w-8 h-8" />
+                  <FontAwesomeIcon icon={team.icon} class="h-8 w-8" />
                 </div>
                 <span class="badge badge-secondary badge-sm text-secondary-content font-bold">
                   Core Function
                 </span>
               </div>
-              <h3 class="text-xl font-bold text-base-content">{team.title}</h3>
+              <h3 class="text-base-content text-xl font-bold">{team.title}</h3>
             </div>
           ))
         }
@@ -129,22 +134,22 @@ const operations = [
     <!-- Operational Focus Section -->
     <section class="space-y-8">
       <div class="text-center">
-        <h2 class="text-3xl font-bold text-base-content">Operational Focus</h2>
-        <p class="text-base-content/70 mt-2 max-w-2xl mx-auto">
+        <h2 class="text-base-content text-3xl font-bold">Operational Focus</h2>
+        <p class="text-base-content/70 mx-auto mt-2 max-w-2xl">
           Specialized capabilities in Oil and Gas and Petrochemical equipments
           across the entire value chain.
         </p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
         {
           operations.map((op) => (
-            <div class="card bg-base-100 border border-base-300 border-t-4 border-t-secondary shadow-sm p-6 flex flex-col justify-between">
+            <div class="card bg-base-100 border-base-300 border-t-secondary flex flex-col justify-between border border-t-4 p-6 shadow-sm">
               <div>
-                <h3 class="text-2xl font-bold text-primary">{op.title}</h3>
-                <p class="text-sm font-semibold text-secondary mb-4">
+                <h3 class="text-primary text-2xl font-bold">{op.title}</h3>
+                <p class="text-secondary mb-4 text-sm font-semibold">
                   {op.subtitle}
                 </p>
-                <ul class="space-y-2 text-base-content/80">
+                <ul class="text-base-content/80 space-y-2">
                   {op.items.map((item) => (
                     <li class="flex items-center gap-2">
                       <span class="text-secondary font-bold">✓</span> {item}
@@ -159,16 +164,15 @@ const operations = [
     </section>
 
     <!-- Organizational Structure Section -->
-    <section class="bg-base-200 p-8 rounded-box border border-base-300">
+    <section class="bg-base-200 rounded-box border-base-300 border p-8">
       <div class="mb-8 text-center">
-        <h2 class="text-3xl font-bold text-base-content">
+        <h2 class="text-base-content text-3xl font-bold">
           Organizational Structure
         </h2>
-        <div class="w-16 h-1 bg-secondary mx-auto mt-2"></div>
+        <div class="bg-secondary mx-auto mt-2 h-1 w-16"></div>
       </div>
       <OrgTree client:load />
     </section>
   </main>
   <Footer />
 </Layout>
-

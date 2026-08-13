@@ -5,22 +5,22 @@ import logo from "../assets/icon.webp";
 ---
 
 <header
-  class="navbar bg-primary text-primary-content sticky top-0 z-50 shadow-md font-sans"
+  class="navbar bg-primary text-primary-content sticky top-0 z-50 font-sans shadow-md"
 >
   <div class="flex-1">
     <a href="/" class="inline-flex items-center px-4 text-xl">
       <img
         src={logo.src}
         alt="PT. PROMATCON TEPATGUNA Logo"
-        class="h-8 w-auto bg-white p-1 rounded"
+        class="h-8 w-auto rounded bg-white p-1"
       />
-      <span class="hidden sm:block ms-3 tracking-wide font-bold"
+      <span class="ms-3 hidden font-bold tracking-wide sm:block"
         ><span class="text-secondary">PT. PROMATCON</span> TEPATGUNA</span
       >
     </a>
   </div>
-  <div class="flex-none hidden md:flex items-center">
-    <ul class="menu menu-horizontal px-1 font-medium text-primary-content">
+  <div class="hidden flex-none items-center md:flex">
+    <ul class="menu menu-horizontal text-primary-content px-1 font-medium">
       <li><a href="/">Home</a></li>
       <li><a href="/about">About Us</a></li>
       <li><a href="/products-services">Products & Services</a></li>
@@ -32,7 +32,7 @@ import logo from "../assets/icon.webp";
       >Contact Us</a
     >
   </div>
-  <div class="flex-none md:hidden dropdown dropdown-end">
+  <div class="dropdown dropdown-end flex-none md:hidden">
     <div
       tabindex="0"
       role="button"
@@ -42,7 +42,7 @@ import logo from "../assets/icon.webp";
     </div>
     <ul
       tabindex="0"
-      class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base-content font-medium"
+      class="menu menu-sm dropdown-content bg-base-100 rounded-box text-base-content z-[1] mt-3 w-52 p-2 font-medium shadow"
     >
       <li><a href="/">Home</a></li>
       <li><a href="/about">About Us</a></li>

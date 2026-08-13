@@ -35,8 +35,8 @@ Include commands only if they were actually run. Quote decisive output when usef
 
 ## Risks
 
-| Scenario tied to changed code | Why it applies | Check and observed result | Likelihood |
-| ----------------------------- | -------------- | ------------------------- | ---------- |
+| Scenario tied to changed code              | Why it applies                                | Check and observed result  | Likelihood                         |
+| ------------------------------------------ | --------------------------------------------- | -------------------------- | ---------------------------------- |
 | <specific supported usage or failure path> | <changed path/selector/API and real consumer> | <focused check and result> | <Confirmed / Possible / Ruled out> |
 
 Use only:
@@ -51,15 +51,15 @@ Do not list generic, theoretical, or unknown future risks. If no Confirmed or Po
 
 Before:
 
-~~~text
+```text
 <actual usage, configuration, source output, or observable behavior>
-~~~
+```
 
 After:
 
-~~~text
+```text
 <actual usage, configuration, source output, or observable behavior>
-~~~
+```
 
 **Developer experience:** <one direct explanation of what changes for users or maintainers>
 

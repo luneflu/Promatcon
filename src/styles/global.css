@@ -40,9 +40,12 @@
 }
 
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
-code, kbd, samp, pre {
-  font-family: 'IBM Plex Mono', monospace;
+code,
+kbd,
+samp,
+pre {
+  font-family: "IBM Plex Mono", monospace;
 }

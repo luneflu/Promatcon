@@ -1,27 +1,31 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import ProductGallery from '../components/products/ProductGallery.svelte';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ProductGallery from "../components/products/ProductGallery.svelte";
 ---
 
 <Layout title="Products & Services | PT. PROMATCON TEPATGUNA">
-	<Header />
-	
-	<main class="flex-grow pt-12 pb-24">
-		<div class="max-w-[1440px] mx-auto px-4 md:px-16">
-			<!-- Page Header -->
-			<div class="text-center mb-10">
-				<h1 class="text-4xl md:text-5xl font-semibold text-base-content mb-2 tracking-tight">Our Solutions & Products</h1>
-				<p class="text-lg text-base-content/70 max-w-2xl mx-auto">
-					Precision engineering and advanced systems tailored for complex industrial challenges.
-				</p>
-			</div>
+  <Header />
 
-			<ProductGallery client:load />
+  <main class="flex-grow pt-12 pb-24">
+    <div class="mx-auto max-w-[1440px] px-4 md:px-16">
+      <!-- Page Header -->
+      <div class="mb-10 text-center">
+        <h1
+          class="text-base-content mb-2 text-4xl font-semibold tracking-tight md:text-5xl"
+        >
+          Our Solutions & Products
+        </h1>
+        <p class="text-base-content/70 mx-auto max-w-2xl text-lg">
+          Precision engineering and advanced systems tailored for complex
+          industrial challenges.
+        </p>
+      </div>
 
-		</div>
-	</main>
-	
-	<Footer />
+      <ProductGallery client:load />
+    </div>
+  </main>
+
+  <Footer />
 </Layout>

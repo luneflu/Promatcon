@@ -3,18 +3,18 @@ import { FontAwesomeIcon } from "astro-fontawesome";
 import { faCheckCircle, faWrench } from "@fortawesome/free-solid-svg-icons";
 ---
 
-<section class="py-24 bg-base-100 border-y border-base-300">
-  <div class="container mx-auto px-4 md:px-8 max-w-7xl">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<section class="bg-base-100 border-base-300 border-y py-24">
+  <div class="container mx-auto max-w-7xl px-4 md:px-8">
+    <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
       <div class="space-y-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-base-content">
+        <h2 class="text-base-content text-3xl font-bold md:text-4xl">
           Introduction
         </h2>
-        <div class="flex gap-1 mt-2">
-          <div class="w-12 h-1 bg-primary"></div>
-          <div class="w-40 h-1 bg-accent"></div>
+        <div class="mt-2 flex gap-1">
+          <div class="bg-primary h-1 w-12"></div>
+          <div class="bg-accent h-1 w-40"></div>
         </div>
-        <div class="space-y-4 text-base-content/80 text-lg leading-relaxed">
+        <div class="text-base-content/80 space-y-4 text-lg leading-relaxed">
           <p>
             PT Promatcon Tepatguna is a steel fabrication company established in
             1990. PT Promatcon Tepatguna is an EPC (Engineering, Procurement,
@@ -41,30 +41,30 @@ import { faCheckCircle, faWrench } from "@fortawesome/free-solid-svg-icons";
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6">
-          <div class="card bg-base-200 border border-base-300">
+        <div class="grid grid-cols-1 gap-6 pt-6 sm:grid-cols-2">
+          <div class="card bg-base-200 border-base-300 border">
             <div class="card-body p-6">
-              <div class="flex items-center gap-3 mb-2 text-primary font-bold">
-                <div class="p-2 bg-secondary/10 text-secondary rounded">
-                  <FontAwesomeIcon icon={faCheckCircle} class="w-5 h-5" />
+              <div class="text-primary mb-2 flex items-center gap-3 font-bold">
+                <div class="bg-secondary/10 text-secondary rounded p-2">
+                  <FontAwesomeIcon icon={faCheckCircle} class="h-5 w-5" />
                 </div>
                 Process Guarantees
               </div>
-              <p class="text-sm text-base-content/70">
+              <p class="text-base-content/70 text-sm">
                 Rigorous simulation and testing to validate output parameters
                 before site deployment.
               </p>
             </div>
           </div>
-          <div class="card bg-base-200 border border-base-300">
+          <div class="card bg-base-200 border-base-300 border">
             <div class="card-body p-6">
-              <div class="flex items-center gap-3 mb-2 text-primary font-bold">
-                <div class="p-2 bg-secondary/10 text-secondary rounded">
-                  <FontAwesomeIcon icon={faWrench} class="w-5 h-5" />
+              <div class="text-primary mb-2 flex items-center gap-3 font-bold">
+                <div class="bg-secondary/10 text-secondary rounded p-2">
+                  <FontAwesomeIcon icon={faWrench} class="h-5 w-5" />
                 </div>
                 Mechanical Integrity
               </div>
-              <p class="text-sm text-base-content/70">
+              <p class="text-base-content/70 text-sm">
                 Adherence to highest global standards for material selection and
                 fabrication quality.
               </p>
@@ -74,14 +74,14 @@ import { faCheckCircle, faWrench } from "@fortawesome/free-solid-svg-icons";
       </div>
 
       <div
-        class="relative h-[500px] rounded-box overflow-hidden shadow-xl border border-base-300"
+        class="rounded-box border-base-300 relative h-[500px] overflow-hidden border shadow-xl"
       >
         <img
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6Y11XvOGVIfSq5r2AA--jLH7yF7Q_2cjPiOFqPzQNGehL0BK4JOq3-vxHVuk8tjjXcQq-CoKXB9yBRxJTv6wX4Nm5Y6eBvuBC6juIxFZu9Kj-GlWnjwsJlY60xMvwJiQlRL2I03bNHzFOZVRFiJQHX74YhCjjBKR06duh2TkSeG8xN7RftEMpFHWzHCfh9VZAijkQFN3tryvjXi1A7HtZFSaoidkKeERo-AKiKb38aKpFmJCHbJpr"
           alt="Industrial pipes and valves"
-          class="w-full h-full object-cover"
+          class="h-full w-full object-cover"
         />
-        <div class="absolute inset-0 bg-secondary/10 mix-blend-multiply"></div>
+        <div class="bg-secondary/10 absolute inset-0 mix-blend-multiply"></div>
       </div>
     </div>
   </div>
