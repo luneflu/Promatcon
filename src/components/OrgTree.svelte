@@ -117,7 +117,7 @@
 
   const options = {
     width: "100%",
-    height: "600px",
+    height: "100%",
     nodeWidth: 200,
     nodeHeight: 60,
     childrenSpacing: 80,
@@ -160,7 +160,8 @@
   onMount(() => {
     if (treeContainer) {
       // @ts-ignore - apexTree typings might be off
-      const TreeConstructor = typeof ApexTree === "function" ? ApexTree : ApexTree.default;
+      const TreeConstructor =
+        typeof ApexTree === "function" ? ApexTree : ApexTree.default;
       const tree = new TreeConstructor(treeContainer, options);
       const graph = tree.render(data);
 
@@ -176,6 +177,4 @@
   });
 </script>
 
-<div bind:this={treeContainer} class="w-full h-[600px]"></div>
-
-
+<div bind:this={treeContainer} class="w-full h-full min-h-[600px]"></div>
