@@ -3,6 +3,8 @@
   import Viewer from "viewerjs";
   import "viewerjs/dist/viewer.css";
   import { register } from "swiper/element/bundle";
+  import Fa from "svelte-fa";
+  import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
   const certificates = [
     {
@@ -62,6 +64,7 @@
     },
   ];
 
+  let swiperEl;
   let viewerContainers = [];
   let viewers = [];
 
@@ -94,6 +97,9 @@
     });
   });
 
+  const prevSlide = () => swiperEl?.swiper?.slidePrev();
+  const nextSlide = () => swiperEl?.swiper?.slideNext();
+
   const swiperBreakpoints = JSON.stringify({
     640: { slidesPerView: 2 },
     768: { slidesPerView: 3 },
@@ -118,12 +124,29 @@
     </div>
   {/each}
 
+  <button
+    on:click={prevSlide}
+    aria-label="Previous slide"
+    class="btn btn-circle btn-sm md:btn-md absolute -left-4 md:-left-6 top-[calc(50%-1.5rem)] -translate-y-1/2 z-10 bg-base-100/80 hover:bg-base-100 border-base-300 shadow-md"
+  >
+    <Fa icon={faChevronLeft} class="w-4 h-4 md:w-5 md:h-5" />
+  </button>
+
+  <button
+    on:click={nextSlide}
+    aria-label="Next slide"
+    class="btn btn-circle btn-sm md:btn-md absolute -right-4 md:-right-6 top-[calc(50%-1.5rem)] -translate-y-1/2 z-10 bg-base-100/80 hover:bg-base-100 border-base-300 shadow-md"
+  >
+    <Fa icon={faChevronRight} class="w-4 h-4 md:w-5 md:h-5" />
+  </button>
+
   <swiper-container
+    bind:this={swiperEl}
     class="w-full pb-12 pt-2 custom-swiper"
-    navigation="true"
     pagination={swiperPagination}
     slides-per-view="1"
     space-between="20"
+    loop="true"
     breakpoints={swiperBreakpoints}
   >
     {#each certificates as cert, i}
@@ -154,9 +177,6 @@
             <div
               class="absolute inset-0 bg-base-300/0 group-hover:bg-base-300/20 transition-colors flex items-center justify-center"
             >
-              <i
-                class="fa-solid fa-magnifying-glass text-3xl text-base-content opacity-0 group-hover:opacity-100 transition-opacity"
-              ></i>
             </div>
           </div>
           <h3 class="text-base-content text-sm font-bold leading-tight">
@@ -170,8 +190,11 @@
 
 <style>
   .custom-swiper {
-    --swiper-navigation-color: var(--fallback-p, oklch(var(--p)));
     --swiper-pagination-color: var(--fallback-p, oklch(var(--p)));
     --swiper-pagination-bottom: 0px;
+  }
+  :global(.custom-swiper::part(pagination)) {
+    position: relative;
+    margin-top: 1rem;
   }
 </style>
