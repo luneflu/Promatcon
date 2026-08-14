@@ -247,7 +247,7 @@
               Machinery & Equipment List
           </h2>
           <div class="overflow-x-auto rounded-box border border-base-content/10 bg-base-100 shadow-sm">
-              <table class="table w-full">
+              <table class="table w-full [&_td]:align-middle [&_th]:align-middle">
                   <thead class="bg-base-200 text-base-content">
                       <tr>
                           <th class="w-1/4">Category</th>
@@ -257,36 +257,46 @@
                   </thead>
                   <tbody>
                       <tr>
-                          <td class="font-bold text-primary flex items-center gap-2">
-                              <Fa icon={faCogs} class="text-sm" />
-                              Bending Roll Machine
+                          <td class="font-bold text-primary">
+                              <div class="flex items-center gap-2">
+                                  <Fa icon={faCogs} class="text-sm shrink-0" />
+                                  <span>Bending Roll Machine</span>
+                              </div>
                           </td>
                           <td class="font-semibold">Wills-Rolling</td>
                           <td>
-                              <span class="badge badge-outline gap-1">Thickness: 32mm</span>
-                              <span class="badge badge-outline gap-1">Rolling Width: 250mm</span>
+                              <div class="flex flex-wrap gap-1.5">
+                                  <span class="badge badge-outline whitespace-nowrap">Thickness: 32mm</span>
+                                  <span class="badge badge-outline whitespace-nowrap">Rolling Width: 250mm</span>
+                              </div>
                           </td>
                       </tr>
                       <tr>
-                          <td class="font-bold text-primary flex items-center gap-2">
-                              <Fa icon={faCogs} class="text-sm" />
-                              Turning Roll Machine
+                          <td class="font-bold text-primary">
+                              <div class="flex items-center gap-2">
+                                  <Fa icon={faCogs} class="text-sm shrink-0" />
+                                  <span>Turning Roll Machine</span>
+                              </div>
                           </td>
                           <td class="font-semibold">60 Ton K-10-2011<br/>45 Ton AMT V68698<br/>10 Ton</td>
                           <td>Heavy-duty rotational positioning for cylindrical vessel welding.</td>
                       </tr>
                       <tr>
-                          <td class="font-bold text-primary flex items-center gap-2">
-                              <Fa icon={faCut} class="text-sm" />
-                              Cutting Machine
+                          <td class="font-bold text-primary">
+                              <div class="flex items-center gap-2">
+                                  <Fa icon={faCut} class="text-sm shrink-0" />
+                                  <span>Cutting Machine</span>
+                              </div>
                           </td>
                           <td class="font-semibold">Powermax 1650 G3 Series</td>
                           <td>550 scph; 9.2 cfm (260 l/min) at 90 psi (6.2 bar)</td>
                       </tr>
                       <tr>
-                          <td class="font-bold text-primary flex items-center gap-2">
-                              <Fa icon={faBolt} class="text-sm" />
-                              Welding Machines
+                          <td class="font-bold text-primary">
+                              <div class="flex items-center gap-2">
+                                  <Fa icon={faBolt} class="text-sm shrink-0" />
+                                  <span>Welding Machines</span>
+                              </div>
                           </td>
                           <td class="font-semibold">Lincoln, Miller, Sanrex Fleet</td>
                           <td>
