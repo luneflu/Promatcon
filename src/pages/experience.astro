@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import CertificateGallery from "../components/certificates/CertificateGallery.svelte";
 import "../styles/global.css";
 
 const featuredProjects = [
@@ -147,7 +148,7 @@ const historicalProjects2013 = [
       <h1
         class="text-base-content mb-2 text-4xl font-semibold tracking-tight md:text-5xl"
       >
-        Experience
+        Experience & Certificates
       </h1>
       <p class="text-base-content/70 mx-auto max-w-3xl text-lg">
         A comprehensive record of our engineering and logistical project
@@ -155,59 +156,62 @@ const historicalProjects2013 = [
       </p>
     </div>
 
+    <!-- Featured Project Cards Grid -->
+    <div class="mb-12 grid grid-cols-1 gap-6 md:grid-cols-2">
+      {
+        featuredProjects.map((project) => (
+          <div class="bg-base-200/50 border-base-300 flex flex-col space-y-4 rounded-lg border p-6">
+            <div class="flex items-center gap-4">
+              <div class="bg-base-100 border-base-300 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded border p-2">
+                <img
+                  src={project.logoUrl}
+                  alt={`${project.client} Logo`}
+                  class="h-full w-full object-contain"
+                />
+              </div>
+              <h3 class="text-base-content text-xl font-bold">
+                {project.client}
+              </h3>
+            </div>
+
+            <div class="space-y-3 pt-2">
+              <div>
+                <span class="text-primary block text-xs font-bold tracking-wider uppercase">
+                  Project Description
+                </span>
+                <p class="text-base-content/80 text-sm font-medium">
+                  {project.description}
+                </p>
+              </div>
+              <div>
+                <span class="text-primary block text-xs font-bold tracking-wider uppercase">
+                  Time and Point of Delivery
+                </span>
+                <p class="text-base-content/80 text-sm font-medium">
+                  {project.delivery}
+                </p>
+              </div>
+              <div>
+                <span class="text-primary block text-xs font-bold tracking-wider uppercase">
+                  Contract No
+                </span>
+                <p class="text-base-content/60 font-mono text-xs">
+                  {project.contract}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- Certificate Section using Swiper -->
+    <CertificateGallery client:load />
+
     <!-- Main Container Card -->
     <div
       class="bg-base-100 border-base-300 space-y-8 rounded-lg border p-6 shadow-sm"
     >
-      <!-- Featured Project Cards Grid -->
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-        {
-          featuredProjects.map((project) => (
-            <div class="bg-base-200/50 border-base-300 flex flex-col space-y-4 rounded-lg border p-6">
-              <div class="flex items-center gap-4">
-                <div class="bg-base-100 border-base-300 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded border p-2">
-                  <img
-                    src={project.logoUrl}
-                    alt={`${project.client} Logo`}
-                    class="h-full w-full object-contain"
-                  />
-                </div>
-                <h3 class="text-base-content text-xl font-bold">
-                  {project.client}
-                </h3>
-              </div>
-
-              <div class="space-y-3 pt-2">
-                <div>
-                  <span class="text-primary block text-xs font-bold tracking-wider uppercase">
-                    Project Description
-                  </span>
-                  <p class="text-base-content/80 text-sm font-medium">
-                    {project.description}
-                  </p>
-                </div>
-                <div>
-                  <span class="text-primary block text-xs font-bold tracking-wider uppercase">
-                    Time and Point of Delivery
-                  </span>
-                  <p class="text-base-content/80 text-sm font-medium">
-                    {project.delivery}
-                  </p>
-                </div>
-                <div>
-                  <span class="text-primary block text-xs font-bold tracking-wider uppercase">
-                    Contract No
-                  </span>
-                  <p class="text-base-content/60 font-mono text-xs">
-                    {project.contract}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))
-        }
-      </div>
-
       <!-- Tabs Navigation for Years -->
       <div class="border-base-300 w-full overflow-x-auto border-b">
         <div class="flex min-w-max space-x-2 pb-2 md:space-x-3">

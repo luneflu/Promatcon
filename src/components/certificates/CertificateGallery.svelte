@@ -1,0 +1,177 @@
+<script>
+  import { onMount } from "svelte";
+  import Viewer from "viewerjs";
+  import "viewerjs/dist/viewer.css";
+  import { register } from "swiper/element/bundle";
+
+  const certificates = [
+    {
+      title: "Sertifikat ASME R",
+      images: ["Sertifikat ASME R-1.jpg"],
+      img: "Sertifikat ASME R-1.jpg",
+    },
+    {
+      title: "Sertifikat ASME U",
+      images: ["Sertifikat ASME U-1.jpg"],
+      img: "Sertifikat ASME U-1.jpg",
+    },
+    {
+      title: "Sertifikat HSE",
+      images: ["Sertifikat HSE PTG-1.jpg"],
+      img: "Sertifikat HSE PTG-1.jpg",
+    },
+    {
+      title: "Sertifikat ISO 2024-2027",
+      images: [
+        "Sertifikat ISO PTG 2024-2027-1.jpg",
+        "Sertifikat ISO PTG 2024-2027-2.jpg",
+        "Sertifikat ISO PTG 2024-2027-3.jpg",
+      ],
+      img: "Sertifikat ISO PTG 2024-2027-1.jpg",
+    },
+    {
+      title: "Sertifikat TKDN Gas Scrubber",
+      images: ["Sertifikat TKDN Gas Scrubber-1.jpg"],
+      img: "Sertifikat TKDN Gas Scrubber-1.jpg",
+    },
+    {
+      title: "Sertifikat TKDN Pig Launcher-Receiver",
+      images: ["Sertifikat TKDN Pig Launcher-Receiver-1.jpg"],
+      img: "Sertifikat TKDN Pig Launcher-Receiver-1.jpg",
+    },
+    {
+      title: "Sertifikat TKDN Separator",
+      images: ["Sertifikat TKDN Separator-1.jpg"],
+      img: "Sertifikat TKDN Separator-1.jpg",
+    },
+    {
+      title: "Sertifikat TKDN Test Separator",
+      images: ["Sertifikat TKDN Test Separator-1.jpg"],
+      img: "Sertifikat TKDN Test Separator-1.jpg",
+    },
+    {
+      title: "SPDA 2026-2027",
+      images: [
+        "SPDA PTG 2026-2027-1.jpg",
+        "SPDA PTG 2026-2027-2.jpg",
+        "SPDA PTG 2026-2027-3.jpg",
+        "SPDA PTG 2026-2027-4.jpg",
+        "SPDA PTG 2026-2027-5.jpg",
+      ],
+      img: "SPDA PTG 2026-2027-1.jpg",
+    },
+  ];
+
+  let viewerContainers = [];
+  let viewers = [];
+
+  onMount(() => {
+    // Register Swiper web components
+    register();
+
+    certificates.forEach((cert, index) => {
+      if (viewerContainers[index]) {
+        viewers[index] = new Viewer(viewerContainers[index], {
+          url: "data-src",
+          toolbar: {
+            zoomIn: 1,
+            zoomOut: 1,
+            oneToOne: 1,
+            reset: 1,
+            prev: 1,
+            play: {
+              show: 1,
+              size: "large",
+            },
+            next: 1,
+            rotateLeft: 1,
+            rotateRight: 1,
+            flipHorizontal: 1,
+            flipVertical: 1,
+          },
+        });
+      }
+    });
+  });
+
+  const swiperBreakpoints = JSON.stringify({
+    640: { slidesPerView: 2 },
+    768: { slidesPerView: 3 },
+    1024: { slidesPerView: 4 },
+  });
+
+  const swiperPagination = JSON.stringify({
+    clickable: true,
+  });
+</script>
+
+<div class="relative">
+  {#each certificates as cert, i}
+    <div bind:this={viewerContainers[i]} class="hidden">
+      {#each cert.images as image}
+        <img
+          src={`/images/Legalitas & Certificate Perusahaan/${image}`}
+          data-src={`/images/Legalitas & Certificate Perusahaan/${image}`}
+          alt={cert.title}
+        />
+      {/each}
+    </div>
+  {/each}
+
+  <swiper-container
+    class="w-full pb-12 pt-2 custom-swiper"
+    navigation="true"
+    pagination={swiperPagination}
+    slides-per-view="1"
+    space-between="20"
+    breakpoints={swiperBreakpoints}
+  >
+    {#each certificates as cert, i}
+      <swiper-slide class="h-auto">
+        <div
+          class="bg-base-200/50 border-base-300 flex h-full flex-col items-center justify-between gap-4 rounded-lg border p-6 text-center hover:bg-base-200 transition-colors"
+        >
+          <div
+            class="w-full aspect-[1/1.4] relative overflow-hidden rounded border border-base-300 cursor-pointer group"
+            on:click={() => {
+              if (viewers[i]) {
+                viewers[i].show();
+              }
+            }}
+            on:keydown={(e) => {
+              if (e.key === "Enter") {
+                if (viewers[i]) viewers[i].show();
+              }
+            }}
+            role="button"
+            tabindex="0"
+          >
+            <img
+              src={`/images/Legalitas & Certificate Perusahaan/${cert.img}`}
+              alt={cert.title}
+              class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-base-300/0 group-hover:bg-base-300/20 transition-colors flex items-center justify-center"
+            >
+              <i
+                class="fa-solid fa-magnifying-glass text-3xl text-base-content opacity-0 group-hover:opacity-100 transition-opacity"
+              ></i>
+            </div>
+          </div>
+          <h3 class="text-base-content text-sm font-bold leading-tight">
+            {cert.title}
+          </h3>
+        </div>
+      </swiper-slide>
+    {/each}
+  </swiper-container>
+</div>
+
+<style>
+  .custom-swiper {
+    --swiper-navigation-color: var(--fallback-p, oklch(var(--p)));
+    --swiper-pagination-color: var(--fallback-p, oklch(var(--p)));
+    --swiper-pagination-bottom: 0px;
+  }
+</style>

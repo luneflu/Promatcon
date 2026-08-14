@@ -31,6 +31,9 @@ importers:
       daisyui:
         specifier: ^5.7.16
         version: 5.7.16
+      swiper:
+        specifier: ^14.1.0
+        version: 14.1.0
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
@@ -2570,6 +2573,13 @@ packages:
     engines: { node: ">=16" }
     hasBin: true
 
+  swiper@14.1.0:
+    resolution:
+      {
+        integrity: sha512-ppit/AqmGvThKlXy4I1/9N/gEyb9s/BDHWciWNeIxbfteFKUhPQXrYuOMKszomXKd9WiLd+/0vKdPHW+0N0mhA==,
+      }
+    engines: { node: ">= 4.7.0" }
+
   tailwindcss@4.3.3:
     resolution:
       {
@@ -4297,6 +4307,8 @@ snapshots:
       csso: 5.0.5
       picocolors: 1.1.1
       sax: 1.6.1
+
+  swiper@14.1.0: {}
 
   tailwindcss@4.3.3: {}
 
