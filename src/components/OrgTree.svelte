@@ -177,4 +177,6 @@
   });
 </script>
 
-<div bind:this={treeContainer} class="w-full h-full min-h-[600px]"></div>
+<div class="w-full overflow-x-auto">
+  <div bind:this={treeContainer} class="min-w-[800px] h-full min-h-[600px]"></div>
+</div>
