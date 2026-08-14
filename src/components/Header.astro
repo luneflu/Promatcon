@@ -14,18 +14,17 @@ import logo from "../assets/icon.webp";
         alt="PT. PROMATCON TEPATGUNA Logo"
         class="h-8 w-auto rounded bg-white p-1"
       />
-      <span class="ms-3 hidden font-bold tracking-wide sm:block"
+      <span class="ms-3 font-bold tracking-wide text-sm sm:text-base"
         ><span class="text-secondary">PT. PROMATCON</span> TEPATGUNA</span
       >
     </a>
   </div>
-  <div class="hidden flex-none items-center md:flex">
+  <div class="hidden flex-none items-center lg:flex">
     <ul class="menu menu-horizontal text-primary-content px-1 font-medium">
       <li><a href="/">Home</a></li>
       <li><a href="/about">About Us</a></li>
       <li><a href="/products-services">Products & Services</a></li>
       <li><a href="/experience">Experience & Certificates</a></li>
-      <li><a href="/contact">Contact Us</a></li>
     </ul>
     <a
       href="/contact"
@@ -33,18 +32,18 @@ import logo from "../assets/icon.webp";
       >Contact Us</a
     >
   </div>
-  <div class="dropdown dropdown-end flex-none md:hidden">
-    <div
-      tabindex="0"
-      role="button"
-      class="btn btn-ghost btn-circle text-primary-content"
-    >
-      <FontAwesomeIcon icon={faBars} class="h-5 w-5" />
-    </div>
-    <ul
-      tabindex="0"
-      class="menu menu-sm dropdown-content bg-base-100 rounded-box text-base-content z-[1] mt-3 w-52 p-2 font-medium shadow"
-    >
+    <div class="dropdown dropdown-end flex-none lg:hidden">
+        <div
+          tabindex="0"
+          role="button"
+          class="btn btn-square bg-transparent border-none shadow-none text-primary-content hover:bg-black/10"
+        >
+          <FontAwesomeIcon icon={faBars} class="h-6 w-6" />
+        </div>
+        <ul
+          tabindex="0"
+          class="menu dropdown-content bg-primary text-primary-content fixed top-16 left-0 w-full z-50 p-4 shadow-xl text-lg font-medium rounded-b-box"
+        >
       <li><a href="/">Home</a></li>
       <li><a href="/about">About Us</a></li>
       <li><a href="/products-services">Products & Services</a></li>
