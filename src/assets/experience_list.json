@@ -1,0 +1,1612 @@
+[
+  {
+    "No": 1,
+    "Client": "PT LANDHEP REKA KARYA",
+    "Project Name": "DIESEL TANK",
+    "Year": "2025",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 2,
+    "Client": "PT SUPRACO INDONESIA",
+    "Project Name": "RAW WATER TANK (1 UNIT)",
+    "Year": "2025",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 3,
+    "Client": "PT ELCO PRIMA",
+    "Project Name": "PEKERJAAN PERBAIKAN NUTSHELL FILTER",
+    "Year": "2025",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 4,
+    "Client": "PT TROPIK ENERGI PANDAN",
+    "Project Name": "RENTAL FRU GAS COMPRESSOR",
+    "Year": "2024",
+    "Category": "Compressor"
+  },
+  {
+    "No": 5,
+    "Client": "PT. ALPHA RIZKI TEKHNOLOGI",
+    "Project Name": "FABRIKASI PONY SUB",
+    "Year": "2024",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 6,
+    "Client": "PT. ALPHA RIZKI TEKHNOLOGI",
+    "Project Name": "FABRIKASI PONY SUB FOR RIG CARRIER/LOADING ARM, PONY SUB FOR STRUCTURES",
+    "Year": "2024",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 7,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "SEWA DAN PENGOPERASIAN GASLIFT COMPRESSOR",
+    "Year": "2023",
+    "Category": "Compressor"
+  },
+  {
+    "No": 8,
+    "Client": "PT TROPIK ENERGI PANDAN",
+    "Project Name": "RENTAL FRU GAS COMPRESSOR",
+    "Year": "2023",
+    "Category": "Compressor"
+  },
+  {
+    "No": 9,
+    "Client": "PT PERTAMINA HULU SANGA SANGA",
+    "Project Name": "SUPPLY GAS COMPRESSOR PACKAGE",
+    "Year": "2023",
+    "Category": "Compressor"
+  },
+  {
+    "No": 10,
+    "Client": "PT PERTAMINA HULU MAHAKAM",
+    "Project Name": "PIG LAUNCHER (HORIZONTAL)",
+    "Year": "2023",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 11,
+    "Client": "PT PERTAMINA HULU MAHAKAM",
+    "Project Name": "2 UNIT LLP SEPARATOR",
+    "Year": "2023",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 12,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "TEST SEPARATOR PACKAGE",
+    "Year": "2023",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 13,
+    "Client": "PERTAMINA HULU ENERGI OSES",
+    "Project Name": "PENGADAAN PIG LAUNCHER & RECEIVER",
+    "Year": "2023",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 14,
+    "Client": "PT CATUR PRIMA TEKNIK",
+    "Project Name": "HYDROCYCLONE VESSEL",
+    "Year": "2023",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 15,
+    "Client": "PT. PERTAMINA EP ZONA 4",
+    "Project Name": "PENGADAAN PIG LAUNCHER DAN RECEIVER FSA SANGASANGA DAN ANGGANA",
+    "Year": "2023",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 16,
+    "Client": "PT. PERTAMINA EP ZONA 4",
+    "Project Name": "PENGADAAN SCRUBBER LP SP OGAN DI FIELD PRABUMULIH",
+    "Year": "2023",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 17,
+    "Client": "PT EMP KORINCI",
+    "Project Name": "JASA-JASA PENYEWAAN GAS KOMPRESOR 85 PT TROPIK ENERGI PANDAN RENTAL FRU GAS COMPRESSOR",
+    "Year": "2022",
+    "Category": "Compressor"
+  },
+  {
+    "No": 18,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "FUEL GAS SCRUBBER",
+    "Year": "2022",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 19,
+    "Client": "PT PERTAMINA HULU MAHAKAM",
+    "Project Name": "2 UNIT LLP SEPARATOR",
+    "Year": "2022",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 20,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "TEST SEPARATOR PACKAGE",
+    "Year": "2022",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 21,
+    "Client": "PERTAMINA HULU ENERGI OSES",
+    "Project Name": "PENGADAAN PIG LAUNCHER & RECEIVER",
+    "Year": "2022",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 22,
+    "Client": "PT CATUR PRIMA TEKNIK",
+    "Project Name": "HYDROCYCLONE VESSEL",
+    "Year": "2022",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 23,
+    "Client": "PT TROPIK ENERGI PANDAN",
+    "Project Name": "RENTAL FRU GAS COMPRESSOR",
+    "Year": "2021",
+    "Category": "Compressor"
+  },
+  {
+    "No": 24,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "SEWA DAN PENGOPERASIAN GASLIFT COMPRESSOR",
+    "Year": "2021-2027 (IN OPERATION)",
+    "Category": "Compressor"
+  },
+  {
+    "No": 25,
+    "Client": "PERTAMINA HULU ENERGI ONWJ",
+    "Project Name": "VESSEL SCRUBBER (PRESSURE VESSEL)",
+    "Year": "2021",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 26,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "PENGADAAN PRESSURE VESSEL UPGRADING SP. TANJUNG UNA SANGASANGA FIELD (LP PRODUCTION SEPARATOR)",
+    "Year": "2021",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 27,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "PENGADAAN PRESSURE VESSEL UPGRADING SP. TANJUNG UNA SANGASANGA FIELD (LP TEST SEPARATOR)",
+    "Year": "2021",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 28,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "PENGADAAN PRESSURE VESSEL UPGRADING SP. TANJUNG UNA SANGASANGA FIELD (LP GAS SCRUBBER)",
+    "Year": "2021",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 29,
+    "Client": "PT PERTAMINA HULU MAHAKAM",
+    "Project Name": "FUEL GAS SCRUBBER, KNOCK OUT DRUM",
+    "Year": "2021",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 30,
+    "Client": "PT PERTAMINA HULU MAHAKAM",
+    "Project Name": "FUEL GAS FILTER (PRESSURE VESSEL)",
+    "Year": "2021",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 31,
+    "Client": "PT TROPIK ENERGI PANDAN",
+    "Project Name": "RENTAL FRU GAS COMPRESSOR",
+    "Year": "2020",
+    "Category": "Compressor"
+  },
+  {
+    "No": 32,
+    "Client": "SAKA INDONESIA PANGKAH",
+    "Project Name": "RENTAL GAS COMPRESSOR FOR HYDROCARBON RECYCLING",
+    "Year": "2020",
+    "Category": "Compressor"
+  },
+  {
+    "No": 33,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "SEWA DAN PENGOPERASIAN GASLIFT COMPRESSOR",
+    "Year": "2020",
+    "Category": "Compressor"
+  },
+  {
+    "No": 34,
+    "Client": "PT PERTAMINA HULU SANGA SANGA",
+    "Project Name": "NATURAL GAS COMPRESSOR PACKAGE",
+    "Year": "2020",
+    "Category": "Compressor"
+  },
+  {
+    "No": 35,
+    "Client": "PT TROPIK ENERGI PANDAN",
+    "Project Name": "RENTAL FRU GAS COMPRESSOR",
+    "Year": "2020",
+    "Category": "Compressor"
+  },
+  {
+    "No": 36,
+    "Client": "PT PERTAMINA HULU ENERGI OGAN KOMERING",
+    "Project Name": "FASILITAS PRODUKSI PENGOLAHAN AIR NUTSHEEL FILTER",
+    "Year": "2020",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 37,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "SEPARATOR VESSEL (DEGASSING VESSEL)",
+    "Year": "2020",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 38,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "PENGADAAN MOVEABLE GAS PROCESSING EQUIPMENT SANGASANGA FIELD (PAKET HP PRODUCTION SEPARATOR)",
+    "Year": "2020",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 39,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "PENGADAAN MOVEABLE GAS PROCESSING EQUIPMENT SANGASANGA FIELD (PAKET HP GAS SCRUBBER)",
+    "Year": "2020",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 40,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "RETROFIT VESSEL V-101 DAN V-501 DI OFFSHORE PLATFORM AW FIELD POLENG",
+    "Year": "2020",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 41,
+    "Client": "PT TROPIK ENERGI PANDAN",
+    "Project Name": "RENTAL PRODUCED WATER TREATMENT PACKAGE",
+    "Year": "2019",
+    "Category": "Compressor"
+  },
+  {
+    "No": 42,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "9 UNIT PRESSURE VESSEL",
+    "Year": "2019",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 43,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "GAS FUEL SCRUBBER PACKAGE, PIG RECEIVER & PIG LAUNCHER, SHUTDOWN VALVE",
+    "Year": "2019",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 44,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "DEHYDRATION UNIT PACKAGE",
+    "Year": "2019",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 45,
+    "Client": "SAKA INDONESIA PANGKAH LTD.",
+    "Project Name": "PROVISION OF PRESSURE VESSEL FOR WEST PANGKAH: GAS LIFT KO DRUM",
+    "Year": "2019",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 46,
+    "Client": "SAKA INDONESIA PANGKAH LTD.",
+    "Project Name": "PROVISION OF PIG LAUNCHER/RECEIVER FOR WEST PANGKAH",
+    "Year": "2019",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 47,
+    "Client": "PT PERTAMINA HULU MAHAKAM",
+    "Project Name": "INLET SEPARATOR & INLET FILTER",
+    "Year": "2019",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 48,
+    "Client": "PT IKA ARTA SUKSES SENTOSA",
+    "Project Name": "2 UNIT PIG LAUNCHER",
+    "Year": "2019",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 49,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "2 UNIT LP TEST SEPARATOR",
+    "Year": "2019",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 50,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "1 UNIT LP PRODUCTION SEPARATOR",
+    "Year": "2019",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 51,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "1 UNIT KNOCK OUT DRUM: TYPE HORIZONTAL",
+    "Year": "2019",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 52,
+    "Client": "PT TROPIK ENERGI PANDAN",
+    "Project Name": "PRODUCED WATER TREATMENT PACKAGE: PRE-TREATMENT UNIT INCLUDE SLUDGE HANDLING, REVERSE OSMOSIS (RO) UNIT, RO CONCENTRATE TREATMENT UNIT , LOCAL PANEL & INTERFACE PIPING",
+    "Year": "2019",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 53,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "SEWA DAN PENGOPERASIAN GASLIFT COMPRESSOR",
+    "Year": "2018",
+    "Category": "Compressor"
+  },
+  {
+    "No": 54,
+    "Client": "PT WIRA CIPTA PERKASA",
+    "Project Name": "GAS COMPRESSOR (4 UNITS) FOR SENG-SEGAT GAS PLANT",
+    "Year": "2018",
+    "Category": "Compressor"
+  },
+  {
+    "No": 55,
+    "Client": "PT. RAHMAT SUMBER UTAMA (MEDCO NATUNA)",
+    "Project Name": "PIG RECEIVER",
+    "Year": "2018",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 56,
+    "Client": "PT. PERTAMINA HULU ENERGI ONWJ",
+    "Project Name": "PENGADAAN VESSEL COMPRESSOR SUCTION SCRUBBER",
+    "Year": "2018",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 57,
+    "Client": "PT. PERTAMINA HULU ENERGI ONWJ",
+    "Project Name": "PENGADAAN PRESSURE VESSEL ARMOSPHERIC SEPARATOR",
+    "Year": "2018",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 58,
+    "Client": "PT. TROPIK PANDAN ENERGI",
+    "Project Name": "PIG LAUNCHER, PIG RECEIVER & GAS METERING SCRUBBER",
+    "Year": "2018",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 59,
+    "Client": "JGC INDONESIA - MEDCO",
+    "Project Name": "RENTAL 1 UNIT BOOSTER COMPRESSOR JR BLOCK A",
+    "Year": "2017",
+    "Category": "Compressor"
+  },
+  {
+    "No": 60,
+    "Client": "SELE RAYA MERANGIN DUA",
+    "Project Name": "PENGADAAN GAS COMPRESSOR DAN CABLE TRANSMISSION PACKAGE",
+    "Year": "2017",
+    "Category": "Compressor"
+  },
+  {
+    "No": 61,
+    "Client": "PT. PERTAMINA HULU ENERGI ONWJ",
+    "Project Name": "HYDROCYCLONE SYSTEM UNIT",
+    "Year": "2017",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 62,
+    "Client": "FAJAR MAS MURNI",
+    "Project Name": "GAS COMPRESSOR PACKAGE",
+    "Year": "2016",
+    "Category": "Compressor"
+  },
+  {
+    "No": 63,
+    "Client": "RABANA GASINDO USAMA",
+    "Project Name": "FUEL GAS BOOSTER APPLICATION FOR SKG CITEUREUP",
+    "Year": "2015",
+    "Category": "Compressor"
+  },
+  {
+    "No": 64,
+    "Client": "MEDCO INDONESIA",
+    "Project Name": "PIG LAUNCHER - RECEIVER",
+    "Year": "2015",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 65,
+    "Client": "BERKAH REJEKI SEKAWAN FOR CHEVRON",
+    "Project Name": "PIG LAUNCHER - RECEIVER",
+    "Year": "2015",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 66,
+    "Client": "VICO INDONESIA",
+    "Project Name": "1 UNIT AG13205, ARIEL JGE2 WITH WAUKESHA F3514GSI ESM",
+    "Year": "2014",
+    "Category": "Compressor"
+  },
+  {
+    "No": 67,
+    "Client": "VICO INDONESIA",
+    "Project Name": "2 UNIT TDSH283L, VGF - H24GSI",
+    "Year": "2014",
+    "Category": "Compressor"
+  },
+  {
+    "No": 68,
+    "Client": "CNOOC SES, LTD",
+    "Project Name": "PROCUREMENT OF TWIN SCREW GAS COMPRESSOR PACKAGE FOR CINTAP RAGUTILIZATION PROJECT",
+    "Year": "2014",
+    "Category": "Compressor"
+  },
+  {
+    "No": 69,
+    "Client": "JOB PERTAMINA MEDCO E&P TOMORI",
+    "Project Name": "SULAWESI PENGADAAN JASA EPC DAN MAINTENANCE 1 UNIT KOMPRESOR GASLIFT",
+    "Year": "2014",
+    "Category": "Compressor"
+  },
+  {
+    "No": 70,
+    "Client": "VIRGINIA INDONESIA CO, LLC",
+    "Project Name": "PENGADAAN KOMPRESOR MOVEABLE DI NILAM SATELLITE 2 DAN NILAM SATELLIT 4",
+    "Year": "2014",
+    "Category": "Compressor"
+  },
+  {
+    "No": 71,
+    "Client": "VICO INDONESIA",
+    "Project Name": "NILAM SATELLIT 4 VLP COMPRESSION SERVICES",
+    "Year": "2014",
+    "Category": "Compressor"
+  },
+  {
+    "No": 72,
+    "Client": "LAPINDO BRANTAS.INC",
+    "Project Name": "SEWA GAS BOOSTER KOMPRESOR",
+    "Year": "2014",
+    "Category": "Compressor"
+  },
+  {
+    "No": 73,
+    "Client": "ODIRA BABELAN",
+    "Project Name": "1 UNIT GAS COMPRESSOR GE-FS-604 WAUKESHA L5794GSI TAMBUN",
+    "Year": "2014",
+    "Category": "Compressor"
+  },
+  {
+    "No": 74,
+    "Client": "PT. PETROCHINA INTERNATIONAL JABUNG LIMITED",
+    "Project Name": "HP SEPARATOR PACKAGE",
+    "Year": "2014",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 75,
+    "Client": "PT. PERTAMINA EP ASSET 5 BUNYU FIELD",
+    "Project Name": "GAS DEHYDRATION UNIT PACKAGE",
+    "Year": "2014",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 76,
+    "Client": "PT. VICO INDONESIA",
+    "Project Name": "FUEL GAS FILTER",
+    "Year": "2014",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 77,
+    "Client": "PT. PERTAMINA HULU ENERGI ONWJ",
+    "Project Name": "PRESSURE VESSEL (SEPARATOR & SCRUBBER)",
+    "Year": "2014",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 78,
+    "Client": "PT. AQUANUR SINERGINDO",
+    "Project Name": "EPCI FOR STORAGE TANK CAP. 2X 6.700 KL SHELL INDONESIA, BANJARMASIN",
+    "Year": "2014",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 79,
+    "Client": "PT. PERTAMINA EP ASSET 1 RANTAU FIELD",
+    "Project Name": "2 UNIT PRESSURE VESSEL C/W MEDIA FILTER",
+    "Year": "2014",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 80,
+    "Client": "PT. MEINDO ELANG INDAH",
+    "Project Name": "4 UNIT FUEL GAS FILTER",
+    "Year": "2014",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 81,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "1 (ONE) UNITS WAUKESHA L7042GSI ESM WITH ARIEL JGT/4",
+    "Year": "2013",
+    "Category": "Compressor"
+  },
+  {
+    "No": 82,
+    "Client": "PT PERTAMINA EP",
+    "Project Name": "2 (TWO) UNITS WAUKESHA L7042GSI ESM WITH ARIEL JGT/4",
+    "Year": "2013",
+    "Category": "Compressor"
+  },
+  {
+    "No": 83,
+    "Client": "PT. CONOCOPHILLIPS GRISSIK LTD.",
+    "Project Name": "RAWA FUEL GAS CONDITIONING",
+    "Year": "2013",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 84,
+    "Client": "PT. VICO INDONESIA",
+    "Project Name": "PRESSURE VESSEL SEPARATOR, FUEL GAS FILTER, AND HEAT EXCHANGER",
+    "Year": "2013",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 85,
+    "Client": "PT. PERTAMINA EP SANGATTA",
+    "Project Name": "PENGADAAN 2 (DUA) UNIT FILTER KAP. 15.000 BPD C/W PUMP KAPASITAS 100 M3/H UNTUK KEBUTUHAN PENANGANAN AIR",
+    "Year": "2013",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 86,
+    "Client": "PT. OGAN INTERIOR GAS",
+    "Project Name": "SUPPLY OF DIESEL STORAGE TANK",
+    "Year": "2013",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 87,
+    "Client": "PT. MEDCO CBM SEKAYU",
+    "Project Name": "JASA PENGADAAN, INSTALASI DAN COMMISIONING DUA (2) UNIT VESSEL LENGKAP PCV DAN LCV SERTA METER DIATAS SKID UNTUK PROYEK GATHERING MEDCO CBM SEKAYU",
+    "Year": "2013",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 88,
+    "Client": "PT. PERTAMINA HULU ENERGI ONWJ",
+    "Project Name": "PIG RECEIVER",
+    "Year": "2013",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 89,
+    "Client": "PT. PERTAMINA EP ASSET 2 LIMAU FIELD",
+    "Project Name": "2 UNIT SCRUBBER",
+    "Year": "2013",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 90,
+    "Client": "PT. ODIRA ENERGY KARANG AGUNG",
+    "Project Name": "PIG LAUNCHER & PIG RECEIVER FABRICATION",
+    "Year": "2013",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 91,
+    "Client": "VICO INDONESIA",
+    "Project Name": "16 (SIXTEEN) UNITS WELLHEAD COMPRESSOR",
+    "Year": "2012",
+    "Category": "Compressor"
+  },
+  {
+    "No": 92,
+    "Client": "VICO INDONESIA",
+    "Project Name": "1 (ONE) UNIT WAUKESHA L5794GSI WITH ARIEL JGE/4",
+    "Year": "2012",
+    "Category": "Compressor"
+  },
+  {
+    "No": 93,
+    "Client": "VICO INDONESIA",
+    "Project Name": "1 (ONE) UNIT WAUKESHA L5794GSI WITH ARIEL JGH/4",
+    "Year": "2012",
+    "Category": "Compressor"
+  },
+  {
+    "No": 94,
+    "Client": "VICO INDONESIA",
+    "Project Name": "3 (THREE) UNITS MOVEABLE GAS RECOVERY COMPRESSOR",
+    "Year": "2012",
+    "Category": "Compressor"
+  },
+  {
+    "No": 95,
+    "Client": "KANGEAN ENERGY INDONESIA",
+    "Project Name": "ARIEL COMPRESOR PARTS FOR VLP PHASE II PROJECT",
+    "Year": "2012",
+    "Category": "Compressor"
+  },
+  {
+    "No": 96,
+    "Client": "PT SURYA MANIKAM",
+    "Project Name": "RENTAL 2 UNITS GAS COMPRESSOR DI LAPANGAN SKG SM PONDOK TENGAH",
+    "Year": "2012",
+    "Category": "Compressor"
+  },
+  {
+    "No": 97,
+    "Client": "PT. FAJAR MAS MURNI",
+    "Project Name": "10 UNIT AIR RECEIVER TANK CPI PROJECT",
+    "Year": "2012",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 98,
+    "Client": "PT. PERTAMINA EP UBEP-ADERA",
+    "Project Name": "PENGGANTIAN FWKO ABAB-II SP",
+    "Year": "2012",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 99,
+    "Client": "CV SILVERA (CHEVRON PACIFIC INDO.)",
+    "Project Name": "SUPPLY OF PIG LAUNCHER AND PIG RECEIVER",
+    "Year": "2012",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 100,
+    "Client": "PT. PERTAMINA HULU ENERGI ONWJ",
+    "Project Name": "PENGADAAN 2 (DUA) UNIT HYDROCYCLONE",
+    "Year": "2012",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 101,
+    "Client": "PT. FAJAR RAWAYAN UTAMA",
+    "Project Name": "1 UNIT AIR RECEIVER TANK",
+    "Year": "2012",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 102,
+    "Client": "PT. PERTAMINA REGION JAWA",
+    "Project Name": "COMPRESSOR SYSTEM KAPASITAS 7.5 MMSCFD",
+    "Year": "2012",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 103,
+    "Client": "PT. REMA MEGA PERSADA (VICO INDONESIA)",
+    "Project Name": "SUPPLY OF KO DRUM, VLP GAS SEPARATOR & FUEL GAS FILTER",
+    "Year": "2012",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 104,
+    "Client": "PT. KALIANDRA MEGA PERSADA (TALISMAN)",
+    "Project Name": "FUEL GAS SCRUBBER",
+    "Year": "2012",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 105,
+    "Client": "CHEVRON PACIFIC INDONESIA",
+    "Project Name": "PENGADAAN 3 UNIT GAUGING SEPARATOR",
+    "Year": "2012",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 106,
+    "Client": "PT. MEDCO E&P INDONESIA",
+    "Project Name": "JASA INSTALASI DAN PENGADAAN 1 (SATU) SEPARATOR HORIZONTAL DAN 2 (DUA) GAS SCRUBBER VERTIKAL UNTUK PROYEK SOKA UPGRADING - BLOK SOUTH SUMATRA EXTENSION",
+    "Year": "2012",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 107,
+    "Client": "VICO INDONESIA",
+    "Project Name": "2 (TWO) UNIT WAUKESHA L5794 GSI ESM WITH GEMINI FS 604",
+    "Year": "2011",
+    "Category": "Compressor"
+  },
+  {
+    "No": 108,
+    "Client": "KONDUR PETROLEUM S.A",
+    "Project Name": "OPERATION & MAINTENANCE FOR : 2 (TWO) UNITS WAUKESHA L5794GSI WITH GEMINI D 504",
+    "Year": "2011",
+    "Category": "Compressor"
+  },
+  {
+    "No": 109,
+    "Client": "PT ODIRA ENERGI PERSADA KARANG AGUNG 1 (ONE) UNIT SUPERIOR WH62 WITH WAUKESHA L7042G",
+    "Project Name": "",
+    "Year": "2011",
+    "Category": "Compressor"
+  },
+  {
+    "No": 110,
+    "Client": "VICO INDONESIA",
+    "Project Name": "1 (ONE) UNIT WAUKESHA L5794 GSI ESM WITH ARIEL JGH4",
+    "Year": "2011",
+    "Category": "Compressor"
+  },
+  {
+    "No": 111,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "1 (ONE) UNIT WAUKESHA L5794 GSI WITH GEMINI FS 604",
+    "Year": "2011",
+    "Category": "Compressor"
+  },
+  {
+    "No": 112,
+    "Client": "PT JAVA ENERGY SEMESTA",
+    "Project Name": "COMPRESSED NATURAL GAS (CNG) PROJECT",
+    "Year": "2011",
+    "Category": "Compressor"
+  },
+  {
+    "No": 113,
+    "Client": "PT. HAYAKA ARTHA MULYA (FOR CPI)",
+    "Project Name": "SEPARATOR HORIZONTAL",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 114,
+    "Client": "PT. PERTAMINA EP - REG. KTI",
+    "Project Name": "3 UNIT FILTER KAP. 15.000 BOPD",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 115,
+    "Client": "PT. PERTAMINA GOETHERMAL ENERGY",
+    "Project Name": "TANGKI TIMBUN UNTUK PROYEK PGE",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 116,
+    "Client": "PT. PERTAMINA EP - LIRIK",
+    "Project Name": "2 UNIT FWKO",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 117,
+    "Client": "PT. PERTAMINA-PETROCHINA EAST JAVA",
+    "Project Name": "EPC GAS COALESCING FILTER",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 118,
+    "Client": "PT. PETROCHINA INT. JABUNG LTD.",
+    "Project Name": "PRODUCTION SEPARATOR & DRAIN TANK",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 119,
+    "Client": "PT. PERTAMINA-PETROCHINA EAST JAVA",
+    "Project Name": "EPC TEST SEPARATOR",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 120,
+    "Client": "PT. SANTOS (SAMPANG) PTY. LTD.",
+    "Project Name": "SUPPLY OF DE-LIQUIDISER (IN LINE SEPARATOR)",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 121,
+    "Client": "PT. PUTRA SEJATI INDOMAKMUR",
+    "Project Name": "1 UNIT HYDROCYCLONE",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 122,
+    "Client": "PT. MEDCO E&P INDONESIA",
+    "Project Name": "JASA INSTALASI DAN PENGADAAN 2 UNIT VESSEL CBM-SE01 DAN SE12",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 123,
+    "Client": "PT. PETROCHINA INT. JABUNG LTD.",
+    "Project Name": "NUTSHELL FILTER PACKAGE",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 124,
+    "Client": "PT. SALAMANDER ENERGY (NORTH SUMATRA) LTD.",
+    "Project Name": "PROVISION OF RENTAL TEG DEHYDRATION PACKAGE AND SERVICES",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 125,
+    "Client": "PT. MATCO ASIA INDONESIA",
+    "Project Name": "VERTICAL AIR RECEIVER",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 126,
+    "Client": "PT. KONDUR PSA",
+    "Project Name": "EPCI FOR GAS PLANT PERMANENT FACILITIES",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 127,
+    "Client": "PT. CHEVRON PACIFIC INDONESIA",
+    "Project Name": "GAS SEPARATOR",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 128,
+    "Client": "PT. INNOCLEAR",
+    "Project Name": "FABRICATED OF SIMPLEX SCRUBBER FOR NATURAL GAS",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 129,
+    "Client": "PT. MEDCO E&P INDONESIA",
+    "Project Name": "JASA FABRIKASI DAN INSTALASI 1 UNIT FWKO DAN 2 UNIT SEPARATOR",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 130,
+    "Client": "PT. PERTAMINA GEOTHERMAL ENERGY",
+    "Project Name": "PENGADAAN JASA FABRIKASI SEPARATOR UJI PRODUKSI PANAS BUMI -LUMUT BALAI",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 131,
+    "Client": "PT. PGN (PERSERO) TBK.",
+    "Project Name": "CP-3B CIKANDE-BITUNG DISTRIBUTION PIPELINE",
+    "Year": "2011",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 132,
+    "Client": "KANGEAN ENERGY INDONESIA",
+    "Project Name": "REFURBISHMENT FOR : 3 (THREE) UNITS ARIEL JGK-4 AND CAT G3606",
+    "Year": "2010",
+    "Category": "Compressor"
+  },
+  {
+    "No": 133,
+    "Client": "KANGEAN ENERGY INDONESIA",
+    "Project Name": "REFURBISHMENT FOR : 3 (THREE) UNITS ARIEL JGK-4 AND CAT G3606",
+    "Year": "2010",
+    "Category": "Compressor"
+  },
+  {
+    "No": 134,
+    "Client": "PT. PERTAMINA EP REGION SUMATERA",
+    "Project Name": "PENGADAAN 1 UNIT SEPARATOR FIELD JAMBI",
+    "Year": "2010",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 135,
+    "Client": "PT PERTAMINA EP REGION JAWA",
+    "Project Name": "PENGADAAN 2 UNIT SEPARATOR HORIZONTAL",
+    "Year": "2010",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 136,
+    "Client": "PT. CONOCOPHILLIPS INDONESIA INC.LTD",
+    "Project Name": "BELIDA HYDROCYCLONE REPLACEMENT",
+    "Year": "2010",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 137,
+    "Client": "PT. CITIC SERAM ENERGY LIMITED",
+    "Project Name": "HP WELL TEST SEPARATOR PACKAGE",
+    "Year": "2010",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 138,
+    "Client": "PT. HAYAKA ARTHA MULYA (PT CHEVRON PACIFIC",
+    "Project Name": "INDONESIA) SUPPLY OF PIG LAUNCHER & PIG RECEIVER",
+    "Year": "2010",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 139,
+    "Client": "PT. PARADISE PERKASA (PT CHEVRON GEOTHERMAL",
+    "Project Name": "SALAK) SEPARATOR WELLHEAD VERTICAL, TYPE CENTRIFUGAL",
+    "Year": "2010",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 140,
+    "Client": "PT. FAJAR RAWAYAN UTAMA (CONOCOPHILLIPS",
+    "Project Name": "GRESIK) SUPPLY OF PIG LAUNHCER & RECEIVER FOR SUBAN 12",
+    "Year": "2010",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 141,
+    "Client": "PT. CHEVRON PACIFIC INDONESIA",
+    "Project Name": "PENGADAAN : VESSEL TYPE VERTICAL DAN HORIZONTAL",
+    "Year": "2010",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 142,
+    "Client": "PT. JAVA ENERGY SEMESTA",
+    "Project Name": "EPC CONTRACTOR FOR CNG STATION AT GRESIK",
+    "Year": "2010",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 143,
+    "Client": "VICO INDONESIA",
+    "Project Name": "3 (THREE) UNIT WAUKESHA L5794GSI WITH GEMINI F 604",
+    "Year": "2009",
+    "Category": "Compressor"
+  },
+  {
+    "No": 144,
+    "Client": "CONOCOPHILLIPS (GRISSIK) LTD",
+    "Project Name": "2 (TWO) UNITS ARIEL JGD-4 WAUKESHA P9390 GSI",
+    "Year": "2009",
+    "Category": "Compressor"
+  },
+  {
+    "No": 145,
+    "Client": "VICO INDONESIA",
+    "Project Name": "3 (THREE) UNIT WAUKESHA L5794 GSI ESM WITH ARIEL JGH4",
+    "Year": "2009",
+    "Category": "Compressor"
+  },
+  {
+    "No": 146,
+    "Client": "PT ODIRA ENERGI PERSADA",
+    "Project Name": "PENYEWAN 1 UNIT GAS COMPRESSOR DI LAPANGAN TAMBUN",
+    "Year": "2009",
+    "Category": "Compressor"
+  },
+  {
+    "No": 147,
+    "Client": "KONDUR PETROLEUM S.A",
+    "Project Name": "2 (TWO) UNITS WAUKESHA L5794GSI WITH GEMINI D 504",
+    "Year": "2009",
+    "Category": "Compressor"
+  },
+  {
+    "No": 148,
+    "Client": "PT. CHEVRON PACIFIC INDONESIA",
+    "Project Name": "INLET GAS FILTER",
+    "Year": "2009",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 149,
+    "Client": "PT. KOREA DEVELOPMENT CO.",
+    "Project Name": "PROVISION OF PRODUCE WATER TREATMENT PACKAGE",
+    "Year": "2009",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 150,
+    "Client": "PT. PERTAMINA EP REGION SUMATERA",
+    "Project Name": "PENGADAAN & PEMASANGAN 3 UNIT NUT SHELL FILTER",
+    "Year": "2009",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 151,
+    "Client": "PT. CONOCOPHILLIPS INDONESIA",
+    "Project Name": "BELIDA HYDROCYCLONE REPLACEMENT",
+    "Year": "2009",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 152,
+    "Client": "PT. BATAVIA PAKUAN (FOR VICO)",
+    "Project Name": "SUPPLY OF FUEL GAS FILTER",
+    "Year": "2009",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 153,
+    "Client": "PT. MEDCO E&P INDONESIA",
+    "Project Name": "PENGADAAN & PEMASANGAN1 UNIT FWKO KAJI",
+    "Year": "2009",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 154,
+    "Client": "PT. MEDCO E&P INDONESIA",
+    "Project Name": "JASA INSTALASI & PENGADAAN 2 UNIT GAS SCRUBBER-FARIZ PHASE III",
+    "Year": "2009",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 155,
+    "Client": "PT. MEDCO E&P INDONESIA",
+    "Project Name": "PENGADAAN & PEMASANGAN1 UNIT FWKO JENE",
+    "Year": "2009",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 156,
+    "Client": "PT. CHEVRON PACIFIC INDONESIA",
+    "Project Name": "CONDENSATE SEPARATOR",
+    "Year": "2009",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 157,
+    "Client": "PT. CHEVRON PACIFIC INDONESIA",
+    "Project Name": "GAUGING SEPARATOR",
+    "Year": "2009",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 158,
+    "Client": "PT. CHEVRON PACIFIC INDONESIA",
+    "Project Name": "SUPPLY OF PIG LAUNCHER-RECEIVER & FOAM",
+    "Year": "2009",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 159,
+    "Client": "PT. GASPRO WAHYU WIDADA",
+    "Project Name": "FUEL GAS HEATER VESSEL",
+    "Year": "2009",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 160,
+    "Client": "PT. KOREA DEVELOPMENT CO.",
+    "Project Name": "FUEL GAS FILTER HOUSING",
+    "Year": "2009",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 161,
+    "Client": "PT. PERTAMINA EP REGION SUMATERA",
+    "Project Name": "2 UNIT SEPARATOR PRABUMULIH",
+    "Year": "2009",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 162,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "2 (TWO) UNIT ARIEL JGE/4/3516 TALE AFR",
+    "Year": "2008",
+    "Category": "Compressor"
+  },
+  {
+    "No": 163,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "2 (TWO) UNIT ARIEL JGE/4/3516 TALE AFR",
+    "Year": "2008",
+    "Category": "Compressor"
+  },
+  {
+    "No": 164,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "3 (THREE) UNIT ARIEL JGE/2/3516 TALE AFR",
+    "Year": "2008",
+    "Category": "Compressor"
+  },
+  {
+    "No": 165,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "1 (ONE) UNIT ARIEL JGE/2/3516 TALE AFR",
+    "Year": "2008",
+    "Category": "Compressor"
+  },
+  {
+    "No": 166,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "1 (TONE) UNIT ARIEL JGE/4/3516 TALE AFR",
+    "Year": "2008",
+    "Category": "Compressor"
+  },
+  {
+    "No": 167,
+    "Client": "PT. MEDCO E & P INDONESIA",
+    "Project Name": "SUPPLY OF 1 UNIT LP PROD SCRUBBER & 1 UNIT LP KO DRUM-SEMBAKUNG PROJECT",
+    "Year": "2008",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 168,
+    "Client": "PT. SURYA ESA PERKASA",
+    "Project Name": "SUPPLY OF TEG INLET SCRUBBER V-120",
+    "Year": "2008",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 169,
+    "Client": "PT. CONOCOPHILLIPS INDONESIA INC. LTD.",
+    "Project Name": "HYDROCYCLONE RETROFIT BELIDA",
+    "Year": "2008",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 170,
+    "Client": "PT. MEDCO E & P INDONESIA",
+    "Project Name": "PENGADAAN 2 UNIT SEPARATOR DAN 3 UNIT SCRUBBER UNTUK PROYEK LAGAN GAS STATION DEVELOPMENT PHASE-2",
+    "Year": "2008",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 171,
+    "Client": "PT. TOTAL E&P INDONESIE",
+    "Project Name": "SUPPLY AND INSTALLATION OF DESANDER PACKAGE AT HLB-272 SS WELL HANDIL",
+    "Year": "2008",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 172,
+    "Client": "PT. KODECO ENERGY CO. LTD.",
+    "Project Name": "PROVISION OF A TEST SEPARATOR PACKAGE",
+    "Year": "2008",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 173,
+    "Client": "PT. MEDCO E & P INDONESIA",
+    "Project Name": "PEMBELIAN DAN PEMASANGAN 1 UNIT TEST SEPARATOR UNTUK PROJECT KAJU OIL DEVELOPMENT PHASE 1",
+    "Year": "2008",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 174,
+    "Client": "PT. TOTAL E&P INDONESIE",
+    "Project Name": "DESANDER SUPPLY AND INSTALLATION AT HRB-338 LS HANDIL",
+    "Year": "2008",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 175,
+    "Client": "PT. PETROCHINA INT. JABUNG LTD.",
+    "Project Name": "TEST, PRODUCTION SEPARATORS, FLARE KO DRUM, DRAIN TANK AND GAS BOOT PACKAGES",
+    "Year": "2008",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 176,
+    "Client": "PT. VICO INDONESIA",
+    "Project Name": "SEPARATOR VESSEL",
+    "Year": "2008",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 177,
+    "Client": "PT. CHEVRON PACIFIC INDONESIA",
+    "Project Name": "GAS BOOT & KNOCK OUT DRUM FOR RANGAU DEGASSING STATION PROJECT DURI - RIAU",
+    "Year": "2008",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 178,
+    "Client": "PT. CHEVRON PACIFIC INDONESIA",
+    "Project Name": "TEST TANK AND PRESSURE VESSEL (GAS BOOT)",
+    "Year": "2008",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 179,
+    "Client": "PT. FAJAR MAS MURNI",
+    "Project Name": "2 UNITS AIR RECEIVER TANK & 2 SETS SKID BASE PLATE",
+    "Year": "2008",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 180,
+    "Client": "PT. CHEVRON PACIFIC INDONESIA",
+    "Project Name": "PIG LAUNCHER & RECEIVER",
+    "Year": "2008",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 181,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "2 (TWO) UNIT ARIEL JGE/4/3516 TALE AFR",
+    "Year": "2007",
+    "Category": "Compressor"
+  },
+  {
+    "No": 182,
+    "Client": "PT ODIRA ENERGI KARANG AGUNG",
+    "Project Name": "2 (TWO) UNIT WAUKESHA L5794GSI WITH GEMINI F 604",
+    "Year": "2007",
+    "Category": "Compressor"
+  },
+  {
+    "No": 183,
+    "Client": "PT ODIRA ENERGI KARANG AGUNG",
+    "Project Name": "2 (TWO) UNIT CATERPILLAR G3516LE/F-504",
+    "Year": "2007",
+    "Category": "Compressor"
+  },
+  {
+    "No": 184,
+    "Client": "PT. CITRA PANJI MANUNGGAL",
+    "Project Name": "4 UNITS ETHYLENE GAS METERING PACKAGE",
+    "Year": "2007",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 185,
+    "Client": "PT. TOTAL E&P INDONESIE",
+    "Project Name": "DESANDER SUPPLY AND INSTALLATION SERTIVES AT HANDIL",
+    "Year": "2007",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 186,
+    "Client": "PT. CIPTA NIAGA GEMILANG",
+    "Project Name": "SUPPLY OF ONE UNIT DEGASSING BOOT",
+    "Year": "2007",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 187,
+    "Client": "PT. HESS (INDONESIA-PANGKAH) LIMITED.",
+    "Project Name": "SUPPLY OF PRESSURE VESSEL",
+    "Year": "2007",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 188,
+    "Client": "PT. KONDUR PETROLEUM S.A",
+    "Project Name": "THREE PHASE TEST SEPARATOR FOR DC AREA",
+    "Year": "2007",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 189,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "1X ARIEL JGE4/CATERPILLAR 3516",
+    "Year": "2006",
+    "Category": "Compressor"
+  },
+  {
+    "No": 190,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "2 (TWO) UNIT ARIEL JGE/4/3516 TALE",
+    "Year": "2006",
+    "Category": "Compressor"
+  },
+  {
+    "No": 191,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "2 (TWO) UNIT ARIEL JGE/4/3516 TALE",
+    "Year": "2006",
+    "Category": "Compressor"
+  },
+  {
+    "No": 192,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "1 ARIEL JGE4/CATERPILLAR G398 PA COMPRESSOR",
+    "Year": "2006",
+    "Category": "Compressor"
+  },
+  {
+    "No": 193,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "GAS INJECTION RENTAL FOR 1 (ONE) YEAR: 2X5 MMSCFD",
+    "Year": "2006",
+    "Category": "Compressor"
+  },
+  {
+    "No": 194,
+    "Client": "PT ODIRA ENERGI KARANG AGUNG",
+    "Project Name": "CATERPILLAR G3516TA/ARIEL JGE-4 WAUKESHA 7041G/SUPERIOR WH62",
+    "Year": "2006",
+    "Category": "Compressor"
+  },
+  {
+    "No": 195,
+    "Client": "PT DWI PRIMA SEMBADA",
+    "Project Name": "2 UNITS OF GAS GENERATING SETS 1 UNIT DIESEL GENERATING SET",
+    "Year": "2006",
+    "Category": "Compressor"
+  },
+  {
+    "No": 196,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "2 (TWO) UNIT ARIEL JGE/4/3516 TALE",
+    "Year": "2006",
+    "Category": "Compressor"
+  },
+  {
+    "No": 197,
+    "Client": "PT. IKPT (AMERADA HESS)",
+    "Project Name": "PRODUCED WATER TREATMENT PACKAGE",
+    "Year": "2006",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 198,
+    "Client": "PT. HARMONI INTI PRATAMA (EMP KANGEAN LIMITED)",
+    "Project Name": "WATER TREATMENT CHEMICAL INJECTION PACKAGE",
+    "Year": "2006",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 199,
+    "Client": "PT. MEDCO E & P INDONESIA",
+    "Project Name": "EPC 7 UNITS PRESSURE VESSEL FOR KONENG STATION",
+    "Year": "2006",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 200,
+    "Client": "PT. MEDCO E & P INDONESIA",
+    "Project Name": "EPC 3 UNIT SEPARATOR UNTUK LAGAN OIL DEVELOPMENT",
+    "Year": "2006",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 201,
+    "Client": "PT. MEDCO E & P INDONESIA",
+    "Project Name": "EPC 6 UNITS PRESSURE VESSEL FOR PATERN REALIGNMENT OPTIMIZED WATER FLOOD PROJECT",
+    "Year": "2006",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 202,
+    "Client": "PT. JOB PERTAMINA - TALISMAN (OK) LTD.",
+    "Project Name": "SUPPLY OF HYDROCYCLONE SEPARATOR PACKAGE FOR ASD BLOCK STATION FACILITY",
+    "Year": "2006",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 203,
+    "Client": "PT. PGN (PERSERO) TBK.",
+    "Project Name": "EPC FOR BANTEN DISTRIBUTION MAINLINE",
+    "Year": "2006",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 204,
+    "Client": "PT. PETROCHINA INT. JABUNG LTD.",
+    "Project Name": "PRODUCTION SEPARATOR PACKAGE",
+    "Year": "2006",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 205,
+    "Client": "PT. MEDCO E & P INDONESIA",
+    "Project Name": "EPC FUEL GAS SCRUBBER",
+    "Year": "2006",
+    "Category": "Pressure Vessel"
+  },
+  {
+    "No": 206,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "1 ARIEL JGE4/CATERPILLAR G398 PA COMPRESSOR",
+    "Year": "2005",
+    "Category": "Compressor"
+  },
+  {
+    "No": 207,
+    "Client": "EXSPAN NUSANTARA RIMAU BLOCK",
+    "Project Name": "GAS INJECTION RENTAL FOR 2 (TWO) MONTH: 3X5 MMSCFD 3 CATERPILLAR G3516TALE + JGE 4 ARIEL",
+    "Year": "2005",
+    "Category": "Compressor"
+  },
+  {
+    "No": 208,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "WAKEUSHA L5790G/ 2X GEMINI FE550-D2",
+    "Year": "2005",
+    "Category": "Compressor"
+  },
+  {
+    "No": 209,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "GAS INJECTION RENTAL FOR 1 (ONE) YEAR: 2X5 MMSCFD",
+    "Year": "2005",
+    "Category": "Compressor"
+  },
+  {
+    "No": 210,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "2X ARIEL JGE4/CATERPILLAR 3516",
+    "Year": "2005",
+    "Category": "Compressor"
+  },
+  {
+    "No": 211,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "PART FOR COMPRESSOR",
+    "Year": "2005",
+    "Category": "Compressor"
+  },
+  {
+    "No": 212,
+    "Client": "PT PERTAMINA (PERSERO)",
+    "Project Name": "RESTAGING CONTRACT FOR CAT 3512/ARIEL JRG-4",
+    "Year": "2005",
+    "Category": "Compressor"
+  },
+  {
+    "No": 213,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "1 ARIEL JGE4/CATERPILLAR G398 PA COMPRESSOR",
+    "Year": "2005",
+    "Category": "Compressor"
+  },
+  {
+    "No": 214,
+    "Client": "VICO INDONESIA",
+    "Project Name": "GAS DELIVERY, 1 UNIT AT16 WAKEUSHA ENGINE + ARIEL JGC 6",
+    "Year": "2004",
+    "Category": "Compressor"
+  },
+  {
+    "No": 215,
+    "Client": "VICO INDONESIA",
+    "Project Name": "GAS DELIVERY, 2 UNIT AT16 WAKEUSHA ENGINE + ARIEL JGC 6",
+    "Year": "2004",
+    "Category": "Compressor"
+  },
+  {
+    "No": 216,
+    "Client": "EXSPAN NUSANTARA",
+    "Project Name": "GAS BOOSTER 2X CAT 3516/JGE/4",
+    "Year": "2004",
+    "Category": "Compressor"
+  },
+  {
+    "No": 217,
+    "Client": "VICO INDONESIA",
+    "Project Name": "SPARE PART COMPRESSOR",
+    "Year": "2004",
+    "Category": "Compressor"
+  },
+  {
+    "No": 218,
+    "Client": "EXSPAN NUSANTARA",
+    "Project Name": "2 ARIEL JGE4/CATERPILLAR 3516TALE COMPRESSOR, SOKA GAS DEVELOPMENT",
+    "Year": "2004",
+    "Category": "Compressor"
+  },
+  {
+    "No": 219,
+    "Client": "EXSPAN NUSANTARA",
+    "Project Name": "3 ARIEL JGE2/CATERPILLAR 3412TA COMPRESSOR, BORANG GAS DEVELOPMENT",
+    "Year": "2004",
+    "Category": "Compressor"
+  },
+  {
+    "No": 220,
+    "Client": "PT MEDCO E&P INDONESIA",
+    "Project Name": "1 ARIEL JGE4/CATERPILLAR G398 PA COMPRESSOR",
+    "Year": "2004",
+    "Category": "Compressor"
+  },
+  {
+    "No": 221,
+    "Client": "EXSPAN NUSANTARA",
+    "Project Name": "GAS LIFT PROJECT : 3 (THREE) CATERPILLAR G3512 TALE + AFR PLUS ARIEL JGE/2",
+    "Year": "2003",
+    "Category": "Compressor"
+  },
+  {
+    "No": 222,
+    "Client": "EXSPAN NUSANTARA",
+    "Project Name": "GAS BOOSTER : 9 (NINE) CATERPILLAR G3512 TALE AFR + JGE2/ JGT2",
+    "Year": "2003",
+    "Category": "Compressor"
+  },
+  {
+    "No": 223,
+    "Client": "CONOCOPHILLIPS INDONESIA INC, LTD/",
+    "Project Name": "HALLIBURTON 2 (TWO) UNITS ARIEL JGD/4C/W ELECTRIC MOTOR 900 HP",
+    "Year": "2003",
+    "Category": "Compressor"
+  },
+  {
+    "No": 224,
+    "Client": "TOTAL FINA ELF",
+    "Project Name": "1 (ONE) UNIT ARIEL JGC/4C/W ELECTRIC MOTOR",
+    "Year": "2003",
+    "Category": "Compressor"
+  },
+  {
+    "No": 225,
+    "Client": "EXSPAN NUSANTARA",
+    "Project Name": "2 (TWO) UNIT ARIEL JGE/4/3516TALE",
+    "Year": "2003",
+    "Category": "Compressor"
+  },
+  {
+    "No": 226,
+    "Client": "EXSPAN NUSANTARA",
+    "Project Name": "1 (ONE) UNIT GEMINI 504/3516TALE",
+    "Year": "2003",
+    "Category": "Compressor"
+  },
+  {
+    "No": 227,
+    "Client": "EXSPAN NUSANTARA RIMAU BLOCK",
+    "Project Name": "GAS INJECTION RENTAL FOR 2 (TWO) YEARS: 3X5 MMSCFD THREE (3) CATERPILLAR G3516 TALE + JGE 4 ARIEL",
+    "Year": "2002",
+    "Category": "Compressor"
+  },
+  {
+    "No": 228,
+    "Client": "VICO INDONESIA AT MUTIARA SITE AND",
+    "Project Name": "SEMBERAH SITE GAS SALES DELIVERING: TWO (2) WAKEUSHA L5970 PLUS ARIEL JGE/4",
+    "Year": "2002",
+    "Category": "Compressor"
+  },
+  {
+    "No": 229,
+    "Client": "EXSPAN NUSANTARA KAJI BLOCK",
+    "Project Name": "GAS LIFT PROJECT : CATERPILLAR G3512 TALE + AFR PLUS ARIEL JGE/2",
+    "Year": "2002",
+    "Category": "Compressor"
+  },
+  {
+    "No": 230,
+    "Client": "UNOCAL - BALIKPAPAN",
+    "Project Name": "YAKIN YCPP 2, ON PLATFORM, WAKEUSHA L5794 GSI + JGH 4 ARIEL",
+    "Year": "2001",
+    "Category": "Compressor"
+  }
+]

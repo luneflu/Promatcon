@@ -3,7 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import CertificateGallery from "../components/certificates/CertificateGallery.svelte";
+import ExperienceTable from "../components/ExperienceTable.svelte";
 import "../styles/global.css";
+import experienceData from "../assets/experience_list.json";
 
 const featuredProjects = [
   {
@@ -21,121 +23,6 @@ const featuredProjects = [
     description: "Supply of Pressure Vessel",
     delivery: "DDU HIPL Warehouse Batam",
     contract: "4500190954",
-  },
-];
-
-const years = [
-  2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
-];
-
-const historicalProjects2013 = [
-  {
-    no: 1,
-    date: "13/01/2013",
-    client: "Total E&P Indonesia",
-    contract: "4300020410",
-    subject: "Surfactant For Capillary String 2013",
-  },
-  {
-    no: 2,
-    date: "15/01/2013",
-    client: "Total E&P Indonesia",
-    contract: "4300020278",
-    subject: "Provision of Surfactant Tank for Capillary String",
-  },
-  {
-    no: 3,
-    date: "01/02/2013",
-    client: "Vico Indonesia",
-    contract: "130273",
-    subject: "Pressure Vessel Separator, Fuel Gas Filter, and Heat Exchanger",
-  },
-  {
-    no: 4,
-    date: "11/03/2013",
-    client: "PT. Pertamina EP Sangata",
-    contract: "4500099316",
-    subject:
-      "Pengadaan 2 (Dua) Unit Filter KAP. 15.000 BPD C/W PUMP. KAP. 100 M3/H Untuk Kebutuhan Penanganan Air",
-  },
-  {
-    no: 5,
-    date: "01/05/2013",
-    client: "PT. Pertamina Hulu Energi WMO",
-    contract: "9420004476",
-    subject: "Assessment OF Hydrocyclone",
-  },
-  {
-    no: 6,
-    date: "17/06/2013",
-    client: "PT. Ogan Interior Gas",
-    contract: "PO/019/OIG/VI/2013",
-    subject: "Supply Of Diesel Storage Tank",
-  },
-  {
-    no: 7,
-    date: "21/06/2013",
-    client: "Advanced Separation Company(ASCOM)",
-    contract: "LOI NO. H1205-407",
-    subject: "Off Twin Line Separator",
-  },
-  {
-    no: 8,
-    date: "28/06/2013",
-    client: "Petrochina Int'l Jabung LTD",
-    contract: "17525/01/00261",
-    subject: "1 Set Filter Element Strainer",
-  },
-  {
-    no: 9,
-    date: "04/07/2013",
-    client: "Vico Indonesia",
-    contract: "PO131915",
-    subject: "One Package Compressor Capacity 7 MMSCFD",
-  },
-  {
-    no: 10,
-    date: "-",
-    client: "PT. Medco CBM Sekayu",
-    contract: "TENDER NO. BF7017-1",
-    subject:
-      "Jasa Pengadaan, Instalasi dan Commisioning dua (2) Unit Vessel Lengkap PCV dan LCV serta Meter Diatas Skid Untuk Proyek Gathering Medco CBM Sekayu",
-  },
-  {
-    no: 11,
-    date: "21/02/2013",
-    client: "PT. Pertamina EP JO PT. Sekki Parama",
-    contract: "4500092487",
-    subject: "4 Unit Wellhead Compressor",
-  },
-  {
-    no: 12,
-    date: "05/08/2013",
-    client: "Vico Indonesia",
-    contract: "PO132225",
-    subject: "2 Unit Compressor Movable Gas Recovery",
-  },
-  {
-    no: 13,
-    date: "23/09/2013",
-    client: "PT. Pertamina Hulu Energi ONWJ",
-    contract: "21301673",
-    subject: "1 Unit Pig Receiver",
-  },
-  {
-    no: 14,
-    date: "-",
-    client: "PT Chevron Pacific Indonesia",
-    contract: "13441 R3WHBKS",
-    subject:
-      "Supply of 16 Unit Test Tank and 3 Unit Pressure Vessel (Warehouse Bekasap)",
-  },
-  {
-    no: 15,
-    date: "-",
-    client: "PT HESS (Indonesia-Pangkah) Ltd",
-    contract: "4500190954",
-    subject: "Supply of Pressure Vessel (DDU HIPL Warehouse Batam)",
   },
 ];
 ---
@@ -208,66 +95,8 @@ const historicalProjects2013 = [
     <!-- Certificate Section using Swiper -->
     <CertificateGallery client:load />
 
-    <!-- Main Container Card -->
-    <div
-      class="bg-base-100 border-base-300 space-y-8 rounded-lg border p-6 shadow-sm"
-    >
-      <!-- Tabs Navigation for Years -->
-      <div class="border-base-300 w-full overflow-x-auto border-b">
-        <div class="flex min-w-max space-x-2 pb-2 md:space-x-3">
-          {
-            years.map((year) => (
-              <button
-                class={`rounded-t-md px-4 py-2 text-sm font-semibold transition-colors ${
-                  year === 2013
-                    ? "bg-primary text-primary-content border-primary border-b-2 font-bold"
-                    : "text-base-content/60 hover:bg-base-200 bg-transparent"
-                }`}
-              >
-                {year}
-              </button>
-            ))
-          }
-        </div>
-      </div>
-
-      <!-- Tab Content - 2013 Active Table -->
-      <div>
-        <div class="overflow-x-auto">
-          <table class="table-zebra table w-full min-w-[800px]">
-            <thead>
-              <tr
-                class="bg-base-200 text-base-content/80 border-base-300 border-b text-xs tracking-wider uppercase"
-              >
-                <th class="w-12">NO</th>
-                <th class="w-28">Date</th>
-                <th class="w-1/4">Client</th>
-                <th class="w-48">PO/Contract No</th>
-                <th>Subject</th>
-              </tr>
-            </thead>
-            <tbody class="text-sm">
-              {
-                historicalProjects2013.map((row) => (
-                  <tr class="hover:bg-base-200/50">
-                    <td class="font-mono text-xs opacity-60">{row.no}</td>
-                    <td class="font-mono text-xs whitespace-nowrap">
-                      {row.date}
-                    </td>
-                    <td class="text-base-content font-semibold">
-                      {row.client}
-                    </td>
-                    <td class="text-base-content/70 font-mono text-xs">
-                      {row.contract}
-                    </td>
-                    <td class="text-base-content/90">{row.subject}</td>
-                  </tr>
-                ))
-              }
-            </tbody>
-          </table>
-        </div>
-      </div>
+    <div class="mt-12">
+      <ExperienceTable client:load data={experienceData} />
     </div>
   </main>
   <Footer />
