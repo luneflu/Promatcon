@@ -224,7 +224,7 @@
                       <Fa icon={faLayerGroup} class="text-secondary" />
                       <h3>Max Wall Thickness</h3>
                   </div>
-                  <p class="text-4xl font-black text-secondary">14 cm</p>
+                  <p class="text-4xl font-black text-secondary">14 mm</p>
                   <p class="text-sm text-base-content/70 mt-2">Fabrication thickness experience for heavy-wall pressure vessels.</p>
               </div>
 
