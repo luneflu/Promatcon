@@ -11,14 +11,19 @@ const t = useTranslations(locale);
 const currentPath = Astro.url.pathname;
 
 function langHref(targetLang: Lang) {
-  const base = currentPath.replace(/^\/(en|id)/, "") || "/";
+  let base = currentPath.replace(/^\/(en|id)/, "");
+  if (base.length > 1 && base.endsWith("/")) {
+    base = base.slice(0, -1);
+  }
+  base = base || "/";
+  
   if (targetLang === "en") return base;
   return `/id${base === "/" ? "" : base}`;
 }
 
 function navHref(path: string) {
-  if (locale === "id") return `/id${path}`;
-  return path;
+  const target = locale === "id" ? `/id${path}` : path;
+  return target || "/";
 }
 ---
 
