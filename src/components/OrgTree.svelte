@@ -262,13 +262,13 @@
       const graph = tree.render(data);
 
       treeContainer.style.height = "100%";
-      treeContainer.style.width = "max-content";
+      treeContainer.style.width = "100%";
 
       const svg = treeContainer.querySelector("svg");
       if (svg) {
         svg.removeAttribute("width");
         svg.removeAttribute("height");
-        svg.style.width = "auto";
+        svg.style.width = "100%";
         svg.style.height = "100%";
         svg.style.minHeight = "100%";
         svg.style.display = "block";
@@ -282,11 +282,6 @@
   });
 </script>
 
-<div
-  class="w-full h-[600px] overflow-x-auto overflow-y-hidden flex justify-center items-stretch"
->
-  <div
-    bind:this={treeContainer}
-    class="h-full flex items-center shrink-0"
-  ></div>
+<div class="w-full h-[600px] overflow-hidden flex justify-center items-stretch">
+  <div bind:this={treeContainer} class="w-full h-full"></div>
 </div>
