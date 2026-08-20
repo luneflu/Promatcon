@@ -6,109 +6,206 @@
 
   const data = {
     id: "root",
-    name: "President Director",
-    data: { name: "President Director", role: "Adi Priyadi", theme: "primary" },
+    name: "DIREKTUR",
+    data: {
+      name: "DIREKTUR",
+      role: "ADI PRIYADI",
+      theme: "primary",
+    },
     children: [
       {
         id: "1",
-        name: "Engineering Director",
+        name: "Secretary",
         data: {
-          name: "Engineering Director",
-          role: "Ben Gadjuli",
+          name: "Secretary",
+          role: "",
           theme: "secondary",
         },
-        children: [
-          {
-            id: "1-1",
-            name: "Engineering Manager",
-            data: { name: "Engineering Manager", role: "Felix Trinaksa" },
-            children: [],
-          },
-        ],
+        children: [],
       },
       {
         id: "2",
-        name: "Operation Director",
+        name: "HR & GA Mgr.",
         data: {
-          name: "Operation Director",
-          role: "Gunarso Sudoro",
+          name: "HR & GA Mgr.",
+          role: "",
           theme: "secondary",
         },
         children: [
           {
             id: "2-1",
-            name: "Procurement Manager",
-            data: { name: "Procurement Manager", role: "David Martandi" },
+            name: "HR & GA Staff",
+            data: { name: "HR & GA Staff", role: "" },
             children: [],
           },
           {
             id: "2-2",
-            name: "H R D",
-            data: { name: "H R D", role: "Suwito" },
+            name: "GA Operasional",
+            data: { name: "GA Operasional", role: "" },
             children: [],
           },
         ],
       },
       {
         id: "3",
-        name: "Finance Director",
+        name: "Gas Comp. Sis Mgr.",
         data: {
-          name: "Finance Director",
-          role: "Dian Hariyani",
+          name: "Gas Comp. Sis Mgr.",
+          role: "",
           theme: "secondary",
         },
         children: [
           {
             id: "3-1",
-            name: "Finance Manager",
-            data: { name: "Finance Manager", role: "Ventje" },
+            name: "Comp. Eng.",
+            data: { name: "Comp. Eng.", role: "" },
             children: [],
           },
           {
             id: "3-2",
-            name: "Marketing Manager",
-            data: { name: "Marketing Manager", role: "", theme: "accent" },
-            children: [
-              {
-                id: "m-1",
-                name: "Compressor Division",
-                data: { name: "Compressor Division", role: "Adi Priyanto" },
-                children: [],
-              },
-              {
-                id: "m-2",
-                name: "Process Division",
-                data: { name: "Process Division", role: "Budi Nainggolan" },
-                children: [],
-              },
-              {
-                id: "m-3",
-                name: "Chemical Division",
-                data: { name: "Chemical Division", role: "Hendro Rahardjo" },
-                children: [],
-              },
-              {
-                id: "m-4",
-                name: "Civil Division",
-                data: { name: "Civil Division", role: "Thomson & Darmawan" },
-                children: [],
-              },
-              {
-                id: "m-5",
-                name: "Pipe and Fittings Trading",
-                data: { name: "Pipe and Fittings Trading", role: "Singgih" },
-                children: [],
-              },
-              {
-                id: "m-6",
-                name: "Control System Integration",
-                data: {
-                  name: "Control System Integration",
-                  role: "Anhar Djamal",
-                },
-                children: [],
-              },
-            ],
+            name: "Comp. Staff",
+            data: { name: "Comp. Staff", role: "" },
+            children: [],
+          },
+          {
+            id: "3-3",
+            name: "Comp. Mekanik & Operator (SITE)",
+            data: { name: "Comp. Mekanik & Operator (SITE)", role: "" },
+            children: [],
+          },
+        ],
+      },
+      {
+        id: "4",
+        name: "Finance Mgr.",
+        data: {
+          name: "Finance Mgr.",
+          role: "",
+          theme: "secondary",
+        },
+        children: [
+          {
+            id: "4-1",
+            name: "Finance Staff",
+            data: { name: "Finance Staff", role: "" },
+            children: [],
+          },
+        ],
+      },
+      {
+        id: "5",
+        name: "HSE Mgr.",
+        data: {
+          name: "HSE Mgr.",
+          role: "",
+          theme: "secondary",
+        },
+        children: [],
+      },
+      {
+        id: "6",
+        name: "Workshop Mgr.",
+        data: {
+          name: "Workshop Mgr.",
+          role: "",
+          theme: "secondary",
+        },
+        children: [],
+      },
+      {
+        id: "7",
+        name: "Operation Mgr.",
+        data: {
+          name: "Operation Mgr.",
+          role: "",
+          theme: "secondary",
+        },
+        children: [
+          {
+            id: "7-1",
+            name: "Project Eng.",
+            data: { name: "Project Eng.", role: "" },
+            children: [],
+          },
+          {
+            id: "7-2",
+            name: "Project Secretary",
+            data: { name: "Project Secretary", role: "" },
+            children: [],
+          },
+        ],
+      },
+      {
+        id: "8",
+        name: "Engineer Mgr.",
+        data: {
+          name: "Engineer Mgr.",
+          role: "",
+          theme: "secondary",
+        },
+        children: [
+          {
+            id: "8-1",
+            name: "Engineer",
+            data: { name: "Engineer", role: "" },
+            children: [],
+          },
+          {
+            id: "8-2",
+            name: "Design Eng",
+            data: { name: "Design Eng", role: "" },
+            children: [],
+          },
+        ],
+      },
+      {
+        id: "9",
+        name: "Project Control",
+        data: {
+          name: "Project Control",
+          role: "",
+          theme: "secondary",
+        },
+        children: [
+          {
+            id: "9-1",
+            name: "PC Staff",
+            data: { name: "PC Staff", role: "" },
+            children: [],
+          },
+        ],
+      },
+      {
+        id: "10",
+        name: "Proc Purchase Mgr.",
+        data: {
+          name: "Proc Purchase Mgr.",
+          role: "",
+          theme: "secondary",
+        },
+        children: [
+          {
+            id: "10-1",
+            name: "Proc/Purchase Staff",
+            data: { name: "Proc/Purchase Staff", role: "" },
+            children: [],
+          },
+        ],
+      },
+      {
+        id: "11",
+        name: "Process Eng. Sales Mgr.",
+        data: {
+          name: "Process Eng. Sales Mgr.",
+          role: "",
+          theme: "secondary",
+        },
+        children: [
+          {
+            id: "11-1",
+            name: "Commercial",
+            data: { name: "Commercial", role: "" },
+            children: [],
           },
         ],
       },
@@ -116,8 +213,7 @@
   };
 
   const options = {
-    width: "100%",
-    height: "100%",
+    height: "auto",
     nodeWidth: 200,
     nodeHeight: 60,
     childrenSpacing: 80,
@@ -165,18 +261,32 @@
       const tree = new TreeConstructor(treeContainer, options);
       const graph = tree.render(data);
 
-      setTimeout(() => {
-        graph.fitScreen();
-      }, 100);
+      treeContainer.style.height = "100%";
+      treeContainer.style.width = "max-content";
 
-      setTimeout(() => {
-        const watermark = document.querySelector("[data-apexcharts-watermark]");
-        if (watermark) watermark.remove();
-      }, 300);
+      const svg = treeContainer.querySelector("svg");
+      if (svg) {
+        svg.removeAttribute("width");
+        svg.removeAttribute("height");
+        svg.style.width = "auto";
+        svg.style.height = "100%";
+        svg.style.minHeight = "100%";
+        svg.style.display = "block";
+      }
+
+      const watermark = treeContainer.querySelector(
+        "[data-apexcharts-watermark]",
+      );
+      if (watermark) watermark.remove();
     }
   });
 </script>
 
-<div class="w-full overflow-x-auto">
-  <div bind:this={treeContainer} class="min-w-[800px] h-full min-h-[600px]"></div>
+<div
+  class="w-full h-[600px] overflow-x-auto overflow-y-hidden flex justify-center items-stretch"
+>
+  <div
+    bind:this={treeContainer}
+    class="h-full flex items-center shrink-0"
+  ></div>
 </div>
