@@ -1,6 +1,6 @@
 ---
 import { FontAwesomeIcon } from "astro-fontawesome";
-import { faBars, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faGlobe, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/icon.webp";
 import type { Lang } from "../i18n/ui";
 import { useTranslations } from "../i18n/ui";
@@ -50,15 +50,15 @@ function navHref(path: string) {
       <div
         tabindex="0"
         role="button"
-        class="btn btn-ghost text-primary-content gap-1"
+        class="btn btn-ghost text-primary-content hover:bg-primary-content hover:text-primary gap-1"
       >
         <FontAwesomeIcon icon={faGlobe} class="h-4 w-4" />
         {locale === "id" ? "ID" : "EN"}
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        <FontAwesomeIcon icon={faChevronDown} class="h-3 w-3" />
       </div>
       <ul
         tabindex="0"
-        class="menu dropdown-content bg-base-100 text-base-content rounded-box z-50 mt-2 w-52 p-2 shadow-lg"
+        class="menu dropdown-content bg-base-100 text-base-content hover:text-primary rounded-box z-50 mt-2 w-52 p-2 shadow-lg"
       >
         <li>
           <a href={langHref("en")} class={locale === "en" ? "active" : ""}>
