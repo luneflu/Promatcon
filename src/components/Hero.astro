@@ -39,7 +39,7 @@ const t = useTranslations(locale);
           {t("hero.cta.primary")}
         </a>
         <a
-          href="#experience"
+          href={locale === "id" ? "/id/experience" : "/experience"}
           class="btn btn-outline hover:bg-primary hover:text-primary-content hover:border-primary border-white font-semibold text-white"
         >
           {t("hero.cta.secondary")}

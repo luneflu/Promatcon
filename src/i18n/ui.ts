@@ -21,7 +21,7 @@ export const ui = {
     "hero.title": "End-to-End Industrial EPCI & Engineering Solutions",
     "hero.desc":
       "From concept design and manufacturing to site installation, commissioning, and operator training. Delivering robust structural integrity and unwavering professional competence.",
-    "hero.cta.primary": "Explore Our Solutions",
+    "hero.cta.primary": "Discover Who We Are",
     "hero.cta.secondary": "View Project Experience",
 
     // Introduction
@@ -121,7 +121,7 @@ export const ui = {
     "hero.title": "Solusi EPCI & Engineering Industri End-to-End",
     "hero.desc":
       "Dari desain konsep dan manufaktur hingga instalasi lapangan, komisioning, dan pelatihan operator. Memberikan integritas struktural yang kuat dan kompetensi profesional yang tak tergoyahkan.",
-    "hero.cta.primary": "Jelajahi Solusi Kami",
+    "hero.cta.primary": "Kenali Kami Lebih Jauh",
     "hero.cta.secondary": "Lihat Pengalaman Proyek",
 
     // Introduction
