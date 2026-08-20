@@ -38,6 +38,10 @@ export const ui = {
     "intro.card2.title": "Mechanical Integrity",
     "intro.card2.desc":
       "Adherence to highest global standards for material selection and fabrication quality.",
+    "intro.download.title": "Download Company Profile",
+    "intro.download.desc":
+      "Get complete overview of our engineering capabilities, facilities, and certifications in PDF format.",
+    "intro.download.btn": "Download PDF",
 
     // Footer
     "footer.tagline":
@@ -138,6 +142,10 @@ export const ui = {
     "intro.card2.title": "Integritas Mekanikal",
     "intro.card2.desc":
       "Kepatuhan terhadap standar global tertinggi untuk pemilihan material dan kualitas fabrikasi.",
+    "intro.download.title": "Unduh Profil Perusahaan",
+    "intro.download.desc":
+      "Dapatkan ikhtisar lengkap kapabilitas engineering, fasilitas, dan sertifikasi kami dalam format PDF.",
+    "intro.download.btn": "Unduh PDF",
 
     // Footer
     "footer.tagline":

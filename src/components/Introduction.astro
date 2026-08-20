@@ -1,6 +1,11 @@
 ---
 import { FontAwesomeIcon } from "astro-fontawesome";
-import { faCheckCircle, faWrench } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCheckCircle,
+  faWrench,
+  faFilePdf,
+  faDownload,
+} from "@fortawesome/free-solid-svg-icons";
 import introductionImage from "../assets/introduction.webp";
 import type { Lang } from "../i18n/ui";
 import { useTranslations } from "../i18n/ui";
@@ -66,6 +71,33 @@ const t = useTranslations(locale);
           class="h-full w-full object-cover"
         />
         <div class="bg-secondary/10 absolute inset-0 mix-blend-multiply"></div>
+      </div>
+    </div>
+
+    <div class="card bg-base-200 border-base-300 mt-12 border p-6 md:p-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div class="flex items-start md:items-center gap-4">
+          <div class="bg-primary/10 text-primary rounded p-3 shrink-0">
+            <FontAwesomeIcon icon={faFilePdf} class="h-7 w-7" />
+          </div>
+          <div>
+            <h3 class="text-base-content font-bold text-lg md:text-xl">
+              {t("intro.download.title")}
+            </h3>
+            <p class="text-base-content/70 text-sm md:text-base">
+              {t("intro.download.desc")}
+            </p>
+          </div>
+        </div>
+        <a
+          href="/PT PROMATCON TEPATGUNA Company Profile.pdf"
+          download="PT PROMATCON TEPATGUNA Company Profile.pdf"
+          class="btn btn-primary shrink-0 gap-2"
+          aria-label="Download Company Profile PDF"
+        >
+          <FontAwesomeIcon icon={faDownload} class="h-4 w-4" />
+          {t("intro.download.btn")}
+        </a>
       </div>
     </div>
   </div>
