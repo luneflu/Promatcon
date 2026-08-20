@@ -40,7 +40,7 @@ export default defineConfig({
     },
   },
 
-  trailingSlash: "never",
+  trailingSlash: "always",
   build: {
     format: "directory",
   },
