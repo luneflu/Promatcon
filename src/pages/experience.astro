@@ -8,8 +8,11 @@ import "../styles/global.css";
 import experienceData from "../assets/experience_list.json";
 import { useTranslations } from "../i18n/ui";
 
-const lang = "en";
-const t = useTranslations(lang);
+import { getLocale } from "astro-i18n-aut";
+import type { Lang } from "../i18n/ui";
+
+const locale = getLocale(Astro.url) as Lang;
+const t = useTranslations(locale);
 
 const featuredProjects = [
   {
@@ -31,8 +34,8 @@ const featuredProjects = [
 ];
 ---
 
-<Layout title="Experience - PT. PROMATCON TEPATGUNA" lang={lang}>
-  <Header lang={lang} currentPath={Astro.url.pathname} />
+<Layout title="Experience - PT. PROMATCON TEPATGUNA">
+  <Header />
   <main class="mx-auto w-full max-w-[1440px] flex-grow px-4 py-12 md:px-16">
     <!-- Header Section -->
     <div class="mb-8 text-center">
@@ -102,5 +105,5 @@ const featuredProjects = [
       <ExperienceTable client:load data={experienceData} />
     </div>
   </main>
-  <Footer lang={lang} />
+  <Footer />
 </Layout>

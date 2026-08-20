@@ -1,17 +1,18 @@
 ---
 import { ClientRouter } from "astro:transitions";
 import "../styles/global.css";
+import { getLocale } from "astro-i18n-aut";
 
 interface Props {
   title: string;
-  lang?: string;
 }
 
-const { title, lang = "en" } = Astro.props;
+const { title } = Astro.props;
+const locale = getLocale(Astro.url) || "en";
 ---
 
 <!doctype html>
-<html lang={lang} data-theme="promatcon">
+<html lang={locale} data-theme="promatcon">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />

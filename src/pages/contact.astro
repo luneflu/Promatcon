@@ -12,8 +12,11 @@ import {
 import "../styles/global.css";
 import { useTranslations } from "../i18n/ui";
 
-const lang = "en";
-const t = useTranslations(lang);
+import { getLocale } from "astro-i18n-aut";
+import type { Lang } from "../i18n/ui";
+
+const locale = getLocale(Astro.url) as Lang;
+const t = useTranslations(locale);
 
 const keyContacts = [
   { name: "Gunarso Sudoro", email: "gunarso@promatcon.co.id" },
@@ -26,8 +29,8 @@ const keyContacts = [
 ];
 ---
 
-<Layout title="Contact Us - PT. PROMATCON TEPATGUNA" lang={lang}>
-  <Header lang={lang} currentPath={Astro.url.pathname} />
+<Layout title="Contact Us - PT. PROMATCON TEPATGUNA">
+  <Header />
   <main class="w-full flex-grow">
     <!-- Hero Section -->
     <section
@@ -213,5 +216,5 @@ const keyContacts = [
       </div>
     </section>
   </main>
-  <Footer lang={lang} />
+  <Footer />
 </Layout>

@@ -4,14 +4,11 @@ import { faBars, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/icon.webp";
 import type { Lang } from "../i18n/ui";
 import { useTranslations } from "../i18n/ui";
+import { getLocale } from "astro-i18n-aut";
 
-interface Props {
-  lang: Lang;
-  currentPath?: string;
-}
-
-const { lang, currentPath = "/" } = Astro.props;
-const t = useTranslations(lang);
+const locale = getLocale(Astro.url) as Lang;
+const t = useTranslations(locale);
+const currentPath = Astro.url.pathname;
 
 function langHref(targetLang: Lang) {
   const base = currentPath.replace(/^\/(en|id)/, "") || "/";
@@ -20,7 +17,7 @@ function langHref(targetLang: Lang) {
 }
 
 function navHref(path: string) {
-  if (lang === "id") return `/id${path}`;
+  if (locale === "id") return `/id${path}`;
   return path;
 }
 ---
@@ -56,7 +53,7 @@ function navHref(path: string) {
         class="btn btn-ghost text-primary-content gap-1"
       >
         <FontAwesomeIcon icon={faGlobe} class="h-4 w-4" />
-        {lang === "id" ? "ID" : "EN"}
+        {locale === "id" ? "ID" : "EN"}
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
       </div>
       <ul
@@ -64,12 +61,12 @@ function navHref(path: string) {
         class="menu dropdown-content bg-base-100 text-base-content rounded-box z-50 mt-2 w-52 p-2 shadow-lg"
       >
         <li>
-          <a href={langHref("en")} class={lang === "en" ? "active" : ""}>
+          <a href={langHref("en")} class={locale === "en" ? "active" : ""}>
             🇬🇧 English
           </a>
         </li>
         <li>
-          <a href={langHref("id")} class={lang === "id" ? "active" : ""}>
+          <a href={langHref("id")} class={locale === "id" ? "active" : ""}>
             🇮🇩 Bahasa Indonesia
           </a>
         </li>
@@ -101,10 +98,10 @@ function navHref(path: string) {
       <li><a href={navHref("/contact")}>{t("nav.contact")}</a></li>
       <div class="divider border-primary-content/20 my-1"></div>
       <li>
-        <a href={langHref("en")} class={lang === "en" ? "font-bold" : ""}>🇬🇧 English</a>
+        <a href={langHref("en")} class={locale === "en" ? "font-bold" : ""}>🇬🇧 English</a>
       </li>
       <li>
-        <a href={langHref("id")} class={lang === "id" ? "font-bold" : ""}>🇮🇩 Bahasa Indonesia</a>
+        <a href={langHref("id")} class={locale === "id" ? "font-bold" : ""}>🇮🇩 Bahasa Indonesia</a>
       </li>
     </ul>
   </div>

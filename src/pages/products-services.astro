@@ -5,12 +5,15 @@ import Footer from "../components/Footer.astro";
 import ProductGallery from "../components/products/ProductGallery.svelte";
 import { useTranslations } from "../i18n/ui";
 
-const lang = "en";
-const t = useTranslations(lang);
+import { getLocale } from "astro-i18n-aut";
+import type { Lang } from "../i18n/ui";
+
+const locale = getLocale(Astro.url) as Lang;
+const t = useTranslations(locale);
 ---
 
-<Layout title="Products & Services | PT. PROMATCON TEPATGUNA" lang={lang}>
-  <Header lang={lang} currentPath={Astro.url.pathname} />
+<Layout title="Products & Services | PT. PROMATCON TEPATGUNA">
+  <Header />
 
   <main class="flex-grow pt-12 pb-24">
     <div class="mx-auto max-w-[1440px] px-4 md:px-16">
@@ -30,5 +33,5 @@ const t = useTranslations(lang);
     </div>
   </main>
 
-  <Footer lang={lang} />
+  <Footer />
 </Layout>

@@ -16,8 +16,11 @@ import {
 import "../styles/global.css";
 import { useTranslations } from "../i18n/ui";
 
-const lang = "en";
-const t = useTranslations(lang);
+import { getLocale } from "astro-i18n-aut";
+import type { Lang } from "../i18n/ui";
+
+const locale = getLocale(Astro.url) as Lang;
+const t = useTranslations(locale);
 
 const coreTeams = [
   { title: t("about.team.construction"), icon: faHardHat },
@@ -53,8 +56,8 @@ const operations = [
 ];
 ---
 
-<Layout title="About Us - PT. PROMATCON TEPATGUNA" lang={lang}>
-  <Header lang={lang} currentPath={Astro.url.pathname} />
+<Layout title="About Us - PT. PROMATCON TEPATGUNA">
+  <Header />
   <main class="mx-auto max-w-7xl space-y-16 px-4 py-12 sm:px-8">
     <!-- Page Header -->
     <div class="mb-10 text-center">
@@ -98,7 +101,7 @@ const operations = [
       </div>
     </section>
 
-    <VisionMission lang={lang} />
+    <VisionMission />
 
     <!-- Core Teams Section -->
     <section class="bg-base-200 rounded-box border-base-300 border p-8">
@@ -170,5 +173,5 @@ const operations = [
       <OrgTree client:load />
     </section>
   </main>
-  <Footer lang={lang} />
+  <Footer />
 </Layout>

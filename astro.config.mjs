@@ -3,6 +3,13 @@ import { defineConfig, fontProviders } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 
 import svelte from "@astrojs/svelte";
+import { i18n } from "astro-i18n-aut/integration";
+
+const locales = {
+  en: "en",
+  id: "id",
+};
+const defaultLocale = "en";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,9 +18,6 @@ export default defineConfig({
   i18n: {
     defaultLocale: "en",
     locales: ["en", "id"],
-    routing: {
-      prefixDefaultLocale: false,
-    },
   },
 
   fonts: [
@@ -36,5 +40,9 @@ export default defineConfig({
     },
   },
 
-  integrations: [svelte()],
+  trailingSlash: "never",
+  build: {
+    format: "directory",
+  },
+  integrations: [svelte(), i18n({ locales, defaultLocale })],
 });

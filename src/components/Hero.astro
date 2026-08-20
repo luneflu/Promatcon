@@ -1,13 +1,10 @@
 ---
 import type { UIKey, Lang } from "../i18n/ui";
 import { useTranslations } from "../i18n/ui";
+import { getLocale } from "astro-i18n-aut";
 
-interface Props {
-  lang: Lang;
-}
-
-const { lang } = Astro.props;
-const t = useTranslations(lang);
+const locale = getLocale(Astro.url) as Lang;
+const t = useTranslations(locale);
 ---
 
 <section
@@ -38,7 +35,7 @@ const t = useTranslations(lang);
         {t("hero.desc")}
       </p>
       <div class="flex flex-wrap gap-4">
-        <a href={lang === "id" ? "/id/about" : "/about"} class="btn btn-primary text-primary-content font-bold">
+        <a href={locale === "id" ? "/id/about" : "/about"} class="btn btn-primary text-primary-content font-bold">
           {t("hero.cta.primary")}
         </a>
         <a
