@@ -1,14 +1,35 @@
 ---
 import { FontAwesomeIcon } from "astro-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/icon.webp";
+import type { Lang } from "../i18n/ui";
+import { useTranslations } from "../i18n/ui";
+
+interface Props {
+  lang: Lang;
+  currentPath?: string;
+}
+
+const { lang, currentPath = "/" } = Astro.props;
+const t = useTranslations(lang);
+
+function langHref(targetLang: Lang) {
+  const base = currentPath.replace(/^\/(en|id)/, "") || "/";
+  if (targetLang === "en") return base;
+  return `/id${base === "/" ? "" : base}`;
+}
+
+function navHref(path: string) {
+  if (lang === "id") return `/id${path}`;
+  return path;
+}
 ---
 
 <header
   class="navbar bg-primary text-primary-content sticky top-0 z-50 font-sans shadow-md"
 >
   <div class="flex-1">
-    <a href="/" class="inline-flex items-center px-4 text-xl">
+    <a href={navHref("/")} class="inline-flex items-center px-4 text-xl">
       <img
         src={logo.src}
         alt="PT. PROMATCON TEPATGUNA Logo"
@@ -21,34 +42,70 @@ import logo from "../assets/icon.webp";
   </div>
   <div class="hidden flex-none items-center lg:flex">
     <ul class="menu menu-horizontal text-primary-content px-1 font-medium">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About Us</a></li>
-      <li><a href="/products-services">Products & Services</a></li>
-      <li><a href="/experience">Experience & Certificates</a></li>
+      <li><a href={navHref("/")}>{t("nav.home")}</a></li>
+      <li><a href={navHref("/about")}>{t("nav.about")}</a></li>
+      <li><a href={navHref("/products-services")}>{t("nav.products")}</a></li>
+      <li><a href={navHref("/experience")}>{t("nav.experience")}</a></li>
     </ul>
+
+    <!-- Language Switcher Desktop -->
+    <div class="dropdown dropdown-end mx-2">
+      <div
+        tabindex="0"
+        role="button"
+        class="btn btn-ghost text-primary-content gap-1"
+      >
+        <FontAwesomeIcon icon={faGlobe} class="h-4 w-4" />
+        {lang === "id" ? "ID" : "EN"}
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu dropdown-content bg-base-100 text-base-content rounded-box z-50 mt-2 w-52 p-2 shadow-lg"
+      >
+        <li>
+          <a href={langHref("en")} class={lang === "en" ? "active" : ""}>
+            🇬🇧 English
+          </a>
+        </li>
+        <li>
+          <a href={langHref("id")} class={lang === "id" ? "active" : ""}>
+            🇮🇩 Bahasa Indonesia
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <a
-      href="/contact"
-      class="btn btn-secondary text-secondary-content ml-4 font-semibold"
-      >Contact Us</a
+      href={navHref("/contact")}
+      class="btn btn-secondary text-secondary-content ml-2 font-semibold"
+      >{t("nav.contact")}</a
     >
   </div>
-    <div class="dropdown dropdown-end flex-none lg:hidden">
-        <div
-          tabindex="0"
-          role="button"
-          class="btn btn-square bg-transparent border-none shadow-none text-primary-content hover:bg-black/10"
-        >
-          <FontAwesomeIcon icon={faBars} class="h-6 w-6" />
-        </div>
-        <ul
-          tabindex="0"
-          class="menu dropdown-content bg-primary text-primary-content fixed top-16 left-0 w-full z-50 p-4 shadow-xl text-lg font-medium rounded-b-box"
-        >
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About Us</a></li>
-      <li><a href="/products-services">Products & Services</a></li>
-      <li><a href="/experience">Experience & Certificates</a></li>
-      <li><a href="/contact">Contact Us</a></li>
+  <div class="dropdown dropdown-end flex-none lg:hidden">
+    <div
+      tabindex="0"
+      role="button"
+      class="btn btn-square bg-transparent border-none shadow-none text-primary-content hover:bg-black/10"
+    >
+      <FontAwesomeIcon icon={faBars} class="h-6 w-6" />
+    </div>
+    <ul
+      tabindex="0"
+      class="menu dropdown-content bg-primary text-primary-content fixed top-16 left-0 w-full z-50 p-4 shadow-xl text-lg font-medium rounded-b-box"
+    >
+      <li><a href={navHref("/")}>{t("nav.home")}</a></li>
+      <li><a href={navHref("/about")}>{t("nav.about")}</a></li>
+      <li><a href={navHref("/products-services")}>{t("nav.products")}</a></li>
+      <li><a href={navHref("/experience")}>{t("nav.experience")}</a></li>
+      <li><a href={navHref("/contact")}>{t("nav.contact")}</a></li>
+      <div class="divider border-primary-content/20 my-1"></div>
+      <li>
+        <a href={langHref("en")} class={lang === "en" ? "font-bold" : ""}>🇬🇧 English</a>
+      </li>
+      <li>
+        <a href={langHref("id")} class={lang === "id" ? "font-bold" : ""}>🇮🇩 Bahasa Indonesia</a>
+      </li>
     </ul>
   </div>
 </header>

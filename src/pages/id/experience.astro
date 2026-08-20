@@ -1,14 +1,14 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import CertificateGallery from "../components/certificates/CertificateGallery.svelte";
-import ExperienceTable from "../components/ExperienceTable.svelte";
-import "../styles/global.css";
-import experienceData from "../assets/experience_list.json";
-import { useTranslations } from "../i18n/ui";
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import CertificateGallery from "../../components/certificates/CertificateGallery.svelte";
+import ExperienceTable from "../../components/ExperienceTable.svelte";
+import "../../styles/global.css";
+import experienceData from "../../assets/experience_list.json";
+import { useTranslations } from "../../i18n/ui";
 
-const lang = "en";
+const lang = "id";
 const t = useTranslations(lang);
 
 const featuredProjects = [
@@ -31,7 +31,7 @@ const featuredProjects = [
 ];
 ---
 
-<Layout title="Experience - PT. PROMATCON TEPATGUNA" lang={lang}>
+<Layout title="Pengalaman & Sertifikat - PT. PROMATCON TEPATGUNA" lang={lang}>
   <Header lang={lang} currentPath={Astro.url.pathname} />
   <main class="mx-auto w-full max-w-[1440px] flex-grow px-4 py-12 md:px-16">
     <!-- Header Section -->
@@ -67,7 +67,7 @@ const featuredProjects = [
             <div class="space-y-3 pt-2">
               <div>
                 <span class="text-primary block text-xs font-bold tracking-wider uppercase">
-                  Project Description
+                  Deskripsi Proyek
                 </span>
                 <p class="text-base-content/80 text-sm font-medium">
                   {project.description}
@@ -75,7 +75,7 @@ const featuredProjects = [
               </div>
               <div>
                 <span class="text-primary block text-xs font-bold tracking-wider uppercase">
-                  Time and Point of Delivery
+                  Waktu dan Titik Pengiriman
                 </span>
                 <p class="text-base-content/80 text-sm font-medium">
                   {project.delivery}
@@ -83,7 +83,7 @@ const featuredProjects = [
               </div>
               <div>
                 <span class="text-primary block text-xs font-bold tracking-wider uppercase">
-                  Contract No
+                  No. Kontrak
                 </span>
                 <p class="text-base-content/60 font-mono text-xs">
                   {project.contract}

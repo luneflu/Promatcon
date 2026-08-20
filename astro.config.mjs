@@ -8,6 +8,14 @@ import svelte from "@astrojs/svelte";
 export default defineConfig({
   site: "https://promatcon.lun.web.id",
 
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "id"],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
+
   fonts: [
     {
       provider: fontProviders.fontsource(),
@@ -23,6 +31,9 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    optimizeDeps: {
+      include: ["swiper/element/bundle", "viewerjs", "apextree"],
+    },
   },
 
   integrations: [svelte()],

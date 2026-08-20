@@ -1,5 +1,14 @@
 ---
 import heroImage from "../assets/hero.webp";
+import type { UIKey, Lang } from "../i18n/ui";
+import { useTranslations } from "../i18n/ui";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
 ---
 
 <section
@@ -19,27 +28,25 @@ import heroImage from "../assets/hero.webp";
     <div class="max-w-3xl py-20">
       <span
         class="badge badge-accent mb-4 p-3 text-xs font-bold tracking-widest uppercase"
-        >Industrial Excellence</span
+        >{t("hero.badge")}</span
       >
       <h1 class="mb-6 text-4xl leading-tight font-bold md:text-5xl lg:text-6xl">
-        End-to-End Industrial EPCI & Engineering Solutions
+        {t("hero.title")}
       </h1>
       <p
         class="text-primary-content/80 mb-10 max-w-2xl text-lg leading-relaxed md:text-xl"
       >
-        From concept design and manufacturing to site installation,
-        commissioning, and operator training. Delivering robust structural
-        integrity and unwavering professional competence.
+        {t("hero.desc")}
       </p>
       <div class="flex flex-wrap gap-4">
-        <a href="/about" class="btn btn-primary text-primary-content font-bold">
-          Explore Our Solutions
+        <a href={lang === "id" ? "/id/about" : "/about"} class="btn btn-primary text-primary-content font-bold">
+          {t("hero.cta.primary")}
         </a>
         <a
           href="#experience"
           class="btn btn-outline hover:bg-primary hover:text-primary-content hover:border-primary border-white font-semibold text-white"
         >
-          View Project Experience
+          {t("hero.cta.secondary")}
         </a>
       </div>
     </div>

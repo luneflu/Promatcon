@@ -68,47 +68,53 @@
   let viewerContainers = [];
   let viewers = [];
 
-  onMount(() => {
-    // Register Swiper web components
-    register();
+  const viewerOptions = {
+    url: "data-src",
+    toolbar: {
+      zoomIn: 1, zoomOut: 1, oneToOne: 1, reset: 1,
+      prev: 1, play: { show: 1, size: "large" }, next: 1,
+      rotateLeft: 1, rotateRight: 1, flipHorizontal: 1, flipVertical: 1,
+    },
+  };
 
-    certificates.forEach((cert, index) => {
+  function initViewers() {
+    viewers.forEach(v => v?.destroy());
+    viewers = [];
+    certificates.forEach((_, index) => {
       if (viewerContainers[index]) {
-        viewers[index] = new Viewer(viewerContainers[index], {
-          url: "data-src",
-          toolbar: {
-            zoomIn: 1,
-            zoomOut: 1,
-            oneToOne: 1,
-            reset: 1,
-            prev: 1,
-            play: {
-              show: 1,
-              size: "large",
-            },
-            next: 1,
-            rotateLeft: 1,
-            rotateRight: 1,
-            flipHorizontal: 1,
-            flipVertical: 1,
-          },
-        });
+        viewers[index] = new Viewer(viewerContainers[index], viewerOptions);
       }
     });
+  }
+
+  onMount(() => {
+    register();
+
+    // Init swiper via JS to support breakpoints object (not JSON string)
+    Object.assign(swiperEl, {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      pagination: { clickable: true },
+      breakpoints: {
+        640: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        1024: { slidesPerView: 4 },
+      },
+    });
+    swiperEl.initialize();
+
+    initViewers();
+
+    document.addEventListener("astro:page-load", initViewers);
+    return () => {
+      document.removeEventListener("astro:page-load", initViewers);
+      viewers.forEach(v => v?.destroy());
+    };
   });
 
   const prevSlide = () => swiperEl?.swiper?.slidePrev();
   const nextSlide = () => swiperEl?.swiper?.slideNext();
-
-  const swiperBreakpoints = JSON.stringify({
-    640: { slidesPerView: 2 },
-    768: { slidesPerView: 3 },
-    1024: { slidesPerView: 4 },
-  });
-
-  const swiperPagination = JSON.stringify({
-    clickable: true,
-  });
 </script>
 
 <div class="relative">
@@ -143,11 +149,7 @@
   <swiper-container
     bind:this={swiperEl}
     class="w-full pb-12 pt-2 custom-swiper"
-    pagination={swiperPagination}
-    slides-per-view="1"
-    space-between="20"
-    loop="true"
-    breakpoints={swiperBreakpoints}
+    init="false"
   >
     {#each certificates as cert, i}
       <swiper-slide class="h-auto">

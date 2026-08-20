@@ -2,6 +2,15 @@
 import { FontAwesomeIcon } from "astro-fontawesome";
 import { faCheckCircle, faWrench } from "@fortawesome/free-solid-svg-icons";
 import introductionImage from "../assets/introduction.webp";
+import type { Lang } from "../i18n/ui";
+import { useTranslations } from "../i18n/ui";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
 ---
 
 <section class="bg-base-100 border-base-300 border-y py-24">
@@ -9,37 +18,16 @@ import introductionImage from "../assets/introduction.webp";
     <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
       <div class="space-y-6">
         <h2 class="text-base-content text-3xl font-bold md:text-4xl">
-          Introduction
+          {t("intro.heading")}
         </h2>
         <div class="mt-2 flex gap-1">
           <div class="bg-primary h-1 w-12"></div>
           <div class="bg-accent h-1 w-40"></div>
         </div>
         <div class="text-base-content/80 space-y-4 text-lg leading-relaxed">
-          <p>
-            PT Promatcon Tepatguna is a steel fabrication company established in
-            1990. PT Promatcon Tepatguna is an EPC (Engineering, Procurement,
-            Construction) company that supplies and services Process & Piping
-            Equipment, Gas Compressors, and TCP (Turbine Control Panels), as
-            well as Retrofits, for the onshore and offshore oil & gas
-            industries; renewable energy (geothermal) operating in Indonesia.
-          </p>
-          <p>
-            PT Promatcon Tepatguna also provides design and manufacturing
-            services, including mechanical calculations, engineering drawings,
-            fabrication, final inspection, and installation of pressure vessels
-            in accordance with international standards and specific
-            specifications based on the American Society of Mechanical Engineers
-            (ASME) Boiler and Pressure Vessel Code Section VIII Div. 1.
-          </p>
-          <p>
-            We have ISO 9001:2015 certified and hold the ASME "U" and "R"
-            stamps. All our work follows a quality management system to ensure
-            timely delivery, clear documentation, and long-term reliability. Our
-            main principle is To provide products and services of high quality
-            that fulfill the customers needs as well as to obtain customer
-            satisfaction" by continuously innovating and working efficiently.
-          </p>
+          <p>{t("intro.p1")}</p>
+          <p>{t("intro.p2")}</p>
+          <p>{t("intro.p3")}</p>
         </div>
 
         <div class="grid grid-cols-1 gap-6 pt-6 sm:grid-cols-2">
@@ -49,11 +37,10 @@ import introductionImage from "../assets/introduction.webp";
                 <div class="bg-secondary/10 text-secondary rounded p-2">
                   <FontAwesomeIcon icon={faCheckCircle} class="h-5 w-5" />
                 </div>
-                Process Guarantees
+                {t("intro.card1.title")}
               </div>
               <p class="text-base-content/70 text-sm">
-                Rigorous simulation and testing to validate output parameters
-                before site deployment.
+                {t("intro.card1.desc")}
               </p>
             </div>
           </div>
@@ -63,11 +50,10 @@ import introductionImage from "../assets/introduction.webp";
                 <div class="bg-secondary/10 text-secondary rounded p-2">
                   <FontAwesomeIcon icon={faWrench} class="h-5 w-5" />
                 </div>
-                Mechanical Integrity
+                {t("intro.card2.title")}
               </div>
               <p class="text-base-content/70 text-sm">
-                Adherence to highest global standards for material selection and
-                fabrication quality.
+                {t("intro.card2.desc")}
               </p>
             </div>
           </div>

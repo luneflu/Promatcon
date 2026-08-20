@@ -5,6 +5,15 @@ import {
   faBullseye,
   faCheckCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import type { Lang } from "../i18n/ui";
+import { useTranslations } from "../i18n/ui";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
 ---
 
 <section
@@ -17,12 +26,10 @@ import {
         <div class="bg-base-100 text-primary rounded-full p-4 shadow-sm">
           <FontAwesomeIcon icon={faEye} class="h-8 w-8" />
         </div>
-        <h2 class="m-0 text-3xl font-bold tracking-tight">Vision</h2>
+        <h2 class="m-0 text-3xl font-bold tracking-tight">{t("vm.vision.title")}</h2>
       </div>
       <p class="text-primary-content/90 text-lg leading-relaxed">
-        To become a leading company in providing support and services to major
-        players in the oil and gas & renewable energy (geothermal) industries in
-        Indonesia.
+        {t("vm.vision.desc")}
       </p>
     </div>
 
@@ -34,7 +41,7 @@ import {
         >
           <FontAwesomeIcon icon={faBullseye} class="h-8 w-8" />
         </div>
-        <h2 class="m-0 text-3xl font-bold tracking-tight">Mission</h2>
+        <h2 class="m-0 text-3xl font-bold tracking-tight">{t("vm.mission.title")}</h2>
       </div>
       <ul class="text-primary-content/90 space-y-4 text-lg">
         <li class="flex items-start gap-3">
@@ -42,31 +49,21 @@ import {
             icon={faCheckCircle}
             class="text-secondary mt-1 h-6 w-6 shrink-0"
           />
-          <span class="leading-relaxed"
-            >The company designs, develops, supplies and supports the oil, gas &
-            renewable energy (geothermal) businesses in Indonesia.</span
-          >
+          <span class="leading-relaxed">{t("vm.mission.1")}</span>
         </li>
         <li class="flex items-start gap-3">
           <FontAwesomeIcon
             icon={faCheckCircle}
             class="text-secondary mt-1 h-6 w-6 shrink-0"
           />
-          <span class="leading-relaxed"
-            >Meet the highest performance standards set by customers to fulfill
-            the quality of work required to provide customer satisfaction.</span
-          >
+          <span class="leading-relaxed">{t("vm.mission.2")}</span>
         </li>
         <li class="flex items-start gap-3">
           <FontAwesomeIcon
             icon={faCheckCircle}
             class="text-secondary mt-1 h-6 w-6 shrink-0"
           />
-          <span class="leading-relaxed"
-            >We promote Quality, Health, Safety, Environment and Reliability
-            on-time delivery and delivery within budget as the highest value in
-            our operations.</span
-          >
+          <span class="leading-relaxed">{t("vm.mission.3")}</span>
         </li>
       </ul>
     </div>

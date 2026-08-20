@@ -1,5 +1,14 @@
 ---
 import logo from "../assets/icon.webp";
+import type { Lang } from "../i18n/ui";
+import { useTranslations } from "../i18n/ui";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
 ---
 
 <footer
@@ -13,8 +22,9 @@ import logo from "../assets/icon.webp";
       >
     </div>
     <p class="text-primary-content/80 leading-relaxed">
-      Delivering end-to-end industrial EPCI and engineering solutions<br />
-      with a commitment to structural integrity and professional competence.
+      {t("footer.tagline").split("\n").map((line, i) => (
+        <>{line}{i === 0 && <br />}</>
+      ))}
     </p>
   </aside>
 </footer>
