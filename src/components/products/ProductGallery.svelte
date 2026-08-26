@@ -215,7 +215,7 @@
                       <Fa icon={faArrowsUpToLine} class="text-secondary" />
                       <h3>Maximum Height</h3>
                   </div>
-                  <p class="text-4xl font-black text-secondary">40 m</p>
+                  <p class="text-4xl font-black text-secondary">15 m</p>
                   <p class="text-sm text-base-content/70 mt-2">Vertical fabrication capability for large column structures.</p>
               </div>
 
@@ -224,7 +224,7 @@
                       <Fa icon={faLayerGroup} class="text-secondary" />
                       <h3>Max Wall Thickness</h3>
                   </div>
-                  <p class="text-4xl font-black text-secondary">12 mm</p>
+                  <p class="text-4xl font-black text-secondary">60 m</p>
                   <p class="text-sm text-base-content/70 mt-2">Fabrication thickness experience for heavy-wall pressure vessels.</p>
               </div>
 
@@ -233,7 +233,7 @@
                       <Fa icon={faWeightHanging} class="text-secondary" />
                       <h3>Lifting Fleet Capacity</h3>
                   </div>
-                  <p class="text-xl font-bold text-base-content">50 Ton & 25 Ton <span class="text-sm font-normal">(4 units overhead)</span></p>
+                  <p class="text-xl font-bold text-base-content">20 Ton <span class="text-sm font-normal">(4 units overhead)</span></p>
                   <p class="text-sm text-base-content/70 mt-2">For heavy lifting up to 100 Ton, mobile or crawler cranes are utilized on site.</p>
               </div>
           </div>
