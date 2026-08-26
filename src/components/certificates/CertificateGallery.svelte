@@ -67,14 +67,9 @@
   let swiperEl;
   let viewerContainer;
   let viewer;
-  let allImagesList = [];
-  let certStartIndices = [];
-  let _idx = 0;
-  certificates.forEach(c => {
-    certStartIndices.push(_idx);
-    c.images.forEach(img => allImagesList.push({ src: img, alt: c.title }));
-    _idx += c.images.length;
-  });
+  const allImagesList = certificates.flatMap((c) =>
+    c.images.map((src) => ({ src, title: c.title }))
+  );
 
   const viewerOptions = {
     url: "data-src",
@@ -124,11 +119,11 @@
 
 <div class="relative">
   <div bind:this={viewerContainer} class="hidden">
-    {#each allImagesList as image}
+    {#each allImagesList as item}
       <img
-        src={`/images/Legalitas & Certificate Perusahaan/${image.src}`}
-        data-src={`/images/Legalitas & Certificate Perusahaan/${image.src}`}
-        alt={image.alt}
+        src={`/images/Legalitas & Certificate Perusahaan/${item.src}`}
+        data-src={`/images/Legalitas & Certificate Perusahaan/${item.src}`}
+        alt={item.title}
       />
     {/each}
   </div>
@@ -154,7 +149,7 @@
     class="w-full pb-12 pt-2 custom-swiper"
     init="false"
   >
-    {#each certificates as cert, i}
+    {#each allImagesList as item, i}
       <swiper-slide class="h-auto">
         <div
           class="bg-base-200/50 border-base-300 flex h-full flex-col items-center justify-between gap-4 rounded-lg border p-6 text-center hover:bg-base-200 transition-colors"
@@ -163,20 +158,20 @@
             class="w-full aspect-[1/1.4] relative overflow-hidden rounded border border-base-300 cursor-pointer group"
             on:click={() => {
               if (viewer) {
-                viewer.view(certStartIndices[i]);
+                viewer.view(i);
               }
             }}
             on:keydown={(e) => {
               if (e.key === "Enter" && viewer) {
-                viewer.view(certStartIndices[i]);
+                viewer.view(i);
               }
             }}
             role="button"
             tabindex="0"
           >
             <img
-              src={`/images/Legalitas & Certificate Perusahaan/${cert.img}`}
-              alt={cert.title}
+              src={`/images/Legalitas & Certificate Perusahaan/${item.src}`}
+              alt={item.title}
               class="w-full h-full object-cover transition-transform group-hover:scale-105"
             />
             <div
@@ -185,7 +180,7 @@
             </div>
           </div>
           <h3 class="text-base-content text-sm font-bold leading-tight">
-            {cert.title}
+            {item.title}
           </h3>
         </div>
       </swiper-slide>
