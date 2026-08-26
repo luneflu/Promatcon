@@ -463,7 +463,7 @@
             <Fa icon={faLayerGroup} class="text-secondary" />
             <h3>{t("products.workshop.thickness")}</h3>
           </div>
-          <p class="text-4xl font-black text-secondary">60 m</p>
+          <p class="text-4xl font-black text-secondary">60 mm</p>
           <p class="text-sm text-base-content/70 mt-2">
             {t("products.workshop.thickness.desc")}
           </p>
@@ -477,7 +477,7 @@
             <h3>{t("products.workshop.fleet")}</h3>
           </div>
           <p class="text-xl font-bold text-base-content">
-            20 Ton <span class="text-sm font-normal">{t("products.workshop.fleet.sub")}</span>
+            25 Ton <span class="text-sm font-normal">{t("products.workshop.fleet.sub")}</span>
           </p>
           <p class="text-sm text-base-content/70 mt-2">
             {t("products.workshop.fleet.desc")}
@@ -533,7 +533,7 @@
                 </div>
               </td>
               <td class="font-semibold"
-                >60 Ton K-10-2011<br />45 Ton AMT V68698<br />10 Ton</td
+                >Yr. 45 Ton<br />AMT V68698 60 Ton<br />K-10-2011 10 Ton</td
               >
               <td
                 >{t("products.workshop.roll.turn.desc")}</td
