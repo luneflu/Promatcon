@@ -65,8 +65,16 @@
   ];
 
   let swiperEl;
-  let viewerContainers = [];
-  let viewers = [];
+  let viewerContainer;
+  let viewer;
+  let allImagesList = [];
+  let certStartIndices = [];
+  let _idx = 0;
+  certificates.forEach(c => {
+    certStartIndices.push(_idx);
+    c.images.forEach(img => allImagesList.push({ src: img, alt: c.title }));
+    _idx += c.images.length;
+  });
 
   const viewerOptions = {
     url: "data-src",
@@ -78,13 +86,10 @@
   };
 
   function initViewers() {
-    viewers.forEach(v => v?.destroy());
-    viewers = [];
-    certificates.forEach((_, index) => {
-      if (viewerContainers[index]) {
-        viewers[index] = new Viewer(viewerContainers[index], viewerOptions);
-      }
-    });
+    if (viewer) viewer.destroy();
+    if (viewerContainer) {
+      viewer = new Viewer(viewerContainer, viewerOptions);
+    }
   }
 
   onMount(() => {
@@ -109,7 +114,7 @@
     document.addEventListener("astro:page-load", initViewers);
     return () => {
       document.removeEventListener("astro:page-load", initViewers);
-      viewers.forEach(v => v?.destroy());
+      if (viewer) viewer.destroy();
     };
   });
 
@@ -118,17 +123,15 @@
 </script>
 
 <div class="relative">
-  {#each certificates as cert, i}
-    <div bind:this={viewerContainers[i]} class="hidden">
-      {#each cert.images as image}
-        <img
-          src={`/images/Legalitas & Certificate Perusahaan/${image}`}
-          data-src={`/images/Legalitas & Certificate Perusahaan/${image}`}
-          alt={cert.title}
-        />
-      {/each}
-    </div>
-  {/each}
+  <div bind:this={viewerContainer} class="hidden">
+    {#each allImagesList as image}
+      <img
+        src={`/images/Legalitas & Certificate Perusahaan/${image.src}`}
+        data-src={`/images/Legalitas & Certificate Perusahaan/${image.src}`}
+        alt={image.alt}
+      />
+    {/each}
+  </div>
 
   <button
     on:click={prevSlide}
@@ -159,13 +162,13 @@
           <div
             class="w-full aspect-[1/1.4] relative overflow-hidden rounded border border-base-300 cursor-pointer group"
             on:click={() => {
-              if (viewers[i]) {
-                viewers[i].show();
+              if (viewer) {
+                viewer.view(certStartIndices[i]);
               }
             }}
             on:keydown={(e) => {
-              if (e.key === "Enter") {
-                if (viewers[i]) viewers[i].show();
+              if (e.key === "Enter" && viewer) {
+                viewer.view(certStartIndices[i]);
               }
             }}
             role="button"
