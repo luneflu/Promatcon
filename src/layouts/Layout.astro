@@ -12,7 +12,7 @@ interface Props {
 const { 
   title, 
   description = "Industrial EPCI & Engineering Solutions by PT. PROMATCON TEPATGUNA.",
-  image = "/favicon.jpg"
+  image = "/images/Pressure Vessel/Dehydration Unit Package - Bambu Besar 002.webp"
 } = Astro.props;
 const locale = getLocale(Astro.url) || "en";
 const site = Astro.site || Astro.url.origin;
@@ -31,7 +31,9 @@ const ogImage = new URL(image, site);
     
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImage} />
+    <meta property="og:image" itemprop="image" content={ogImage} />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
     
     <meta name="twitter:card" content="summary_large_image" />
