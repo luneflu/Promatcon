@@ -24,6 +24,9 @@ export const ui = {
     "hero.cta.primary": "Discover Who We Are",
     "hero.cta.secondary": "View Project Experience",
 
+    // Companies
+    "companies.title": "Our Partners and Customers",
+
     // Introduction
     "intro.heading": "Introduction",
     "intro.p1":
@@ -160,6 +163,9 @@ export const ui = {
       "Dari desain konsep dan manufaktur hingga instalasi lapangan, komisioning, dan pelatihan operator. Memberikan integritas struktural yang kuat dan kompetensi profesional yang tak tergoyahkan.",
     "hero.cta.primary": "Kenali Kami Lebih Jauh",
     "hero.cta.secondary": "Lihat Pengalaman Proyek",
+
+    // Companies
+    "companies.title": "Partner dan Pelanggan Kami",
 
     // Introduction
     "intro.heading": "Pendahuluan",
