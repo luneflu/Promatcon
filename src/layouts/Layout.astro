@@ -5,21 +5,40 @@ import { getLocale } from "astro-i18n-aut";
 
 interface Props {
   title: string;
+  description?: string;
+  image?: string;
 }
 
-const { title } = Astro.props;
+const { 
+  title, 
+  description = "Industrial EPCI & Engineering Solutions by PT. PROMATCON TEPATGUNA.",
+  image = "/favicon.jpg"
+} = Astro.props;
 const locale = getLocale(Astro.url) || "en";
+const site = Astro.site || Astro.url.origin;
+const ogImage = new URL(image, site);
 ---
 
 <!doctype html>
 <html lang={locale} data-theme="promatcon">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={Astro.url} />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
     <ClientRouter />
   </head>
   <body class="bg-base-100 text-base-content font-sans">
