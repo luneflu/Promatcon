@@ -214,10 +214,10 @@
 
   const options = {
     height: "auto",
-    nodeWidth: 200,
-    nodeHeight: 60,
-    childrenSpacing: 80,
-    siblingSpacing: 30,
+    nodeWidth: 320,
+    nodeHeight: 100,
+    childrenSpacing: 120,
+    siblingSpacing: 50,
     direction: "top",
     contentKey: "data",
     groupLeafNodes: true,
@@ -245,9 +245,9 @@
         roleColor = "oklch(var(--ac))";
       }
 
-      return `<div style='background: ${bg}; border: 1px solid ${border}; border-radius: var(--rounded-box, 1rem); padding: 0.75rem; text-align: center; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;'>
-          <p style='margin: 0 0 0.25rem 0; font-size: 0.75rem; font-weight: bold; color: ${nameColor};'>${content.name || ""}</p>
-          <p style='margin: 0; font-size: 0.875rem; color: ${roleColor}; opacity: 0.9;'>${content.role || ""}</p>
+      return `<div style='background: ${bg}; border: 2px solid ${border}; border-radius: var(--rounded-box, 1rem); padding: 1rem; text-align: center; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;'>
+          <p style='margin: 0 0 0.5rem 0; font-size: 1.1rem; font-weight: bold; color: ${nameColor};'>${content.name || ""}</p>
+          <p style='margin: 0; font-size: 1rem; color: ${roleColor}; opacity: 0.9;'>${content.role || ""}</p>
         </div>`;
     },
     enableExpandCollapse: true,
@@ -282,6 +282,6 @@
   });
 </script>
 
-<div class="w-full h-[600px] overflow-hidden flex justify-center items-stretch">
-  <div bind:this={treeContainer} class="w-full h-full"></div>
+<div class="w-full h-[1000px] overflow-auto flex justify-center items-stretch bg-base-200/50 rounded-box p-4 border border-base-300">
+  <div bind:this={treeContainer} class="w-full h-full min-w-max"></div>
 </div>

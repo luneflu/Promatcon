@@ -31,24 +31,6 @@ const coreTeams = [
 
 const operations = [
   {
-    title: t("about.upstream.title"),
-    subtitle: t("about.upstream.sub"),
-    items: [
-      "Offshore Exploration",
-      "Onshore Exploration",
-      "Surface Facilities",
-    ],
-  },
-  {
-    title: t("about.midstream.title"),
-    subtitle: t("about.midstream.sub"),
-    items: [
-      "Oil and Gas Pipe Transfer Lines",
-      "FPSO (Floating Production Storage)",
-      "Tankers",
-    ],
-  },
-  {
     title: t("about.downstream.title"),
     subtitle: t("about.downstream.sub"),
     items: ["Crude Oil Refining Process", "Gas Processing", "Petrochemical"],
@@ -141,7 +123,7 @@ const operations = [
           {t("about.operations.subtitle")}
         </p>
       </div>
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-1 max-w-xl mx-auto w-full">
         {
           operations.map((op) => (
             <div class="card bg-base-100 border-base-300 border-t-secondary flex flex-col justify-between border border-t-4 p-6 shadow-sm">
