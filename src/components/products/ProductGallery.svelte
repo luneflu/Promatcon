@@ -477,7 +477,7 @@
             <h3>{t("products.workshop.fleet")}</h3>
           </div>
           <p class="text-xl font-bold text-base-content">
-            25 Ton <span class="text-sm font-normal">{t("products.workshop.fleet.sub")}</span>
+            20 Ton <span class="text-sm font-normal">{t("products.workshop.fleet.sub")}</span>
           </p>
           <p class="text-sm text-base-content/70 mt-2">
             {t("products.workshop.fleet.desc")}
