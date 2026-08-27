@@ -95,6 +95,10 @@
       slidesPerView: 1,
       spaceBetween: 20,
       loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
       pagination: { clickable: true },
       breakpoints: {
         640: { slidesPerView: 2 },

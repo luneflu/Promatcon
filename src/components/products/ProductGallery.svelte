@@ -16,7 +16,10 @@
     faCut,
     faBolt,
     faMagnifyingGlassPlus,
+    faChevronLeft,
+    faChevronRight,
   } from "@fortawesome/free-solid-svg-icons";
+  import { register } from "swiper/element/bundle";
   import { useTranslations } from "../../i18n/ui";
 
   let { locale = "en" } = $props();
@@ -232,9 +235,23 @@
 
   const products = [...gasCompressorImages, ...pressureVesselImages];
 
+  const workshopImages = [
+    { title: "Workshop Facility 1", image: "PHOTO-2026-08-27-11-01-57.jpg" },
+    { title: "Workshop Facility 2", image: "PHOTO-2026-08-27-11-01-57_1.jpg" },
+    { title: "Workshop Facility 3", image: "PHOTO-2026-08-27-11-02-01.jpg" },
+    { title: "Workshop Facility 4", image: "PHOTO-2026-08-27-11-02-02.jpg" },
+    { title: "Workshop Facility 5", image: "PHOTO-2026-08-27-11-02-03.jpg" },
+    { title: "Workshop Facility 6", image: "PHOTO-2026-08-27-11-05-03.jpg" },
+    { title: "Workshop Facility 7", image: "PHOTO-2026-08-27-11-05-07.jpg" },
+    { title: "Workshop Facility 8", image: "PHOTO-2026-08-27-11-05-21.jpg" },
+  ];
+
   let activeCategory = $state("gas-compressor");
   let viewer = null;
+  let viewerWorkshop = null;
   let galleryEl = $state(null);
+  let galleryWorkshopEl = $state(null);
+  let swiperWorkshopEl = $state(null);
 
   $effect(() => {
     if (galleryEl && activeCategory !== "workshop-facility") {
@@ -249,10 +266,45 @@
     }
   });
 
-  onDestroy(() => {
-    if (viewer) {
-      viewer.destroy();
+  $effect(() => {
+    if (activeCategory === "workshop-facility") {
+      register();
+      if (swiperWorkshopEl && !swiperWorkshopEl.swiper) {
+        Object.assign(swiperWorkshopEl, {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: { clickable: true },
+          breakpoints: {
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+          },
+        });
+        swiperWorkshopEl.initialize();
+      }
+
+      if (galleryWorkshopEl) {
+        if (viewerWorkshop) viewerWorkshop.destroy();
+        viewerWorkshop = new Viewer(galleryWorkshopEl, {
+          url: "data-src",
+          toolbar: {
+            zoomIn: 1, zoomOut: 1, oneToOne: 1, reset: 1,
+            prev: 1, play: { show: 1, size: "large" }, next: 1,
+            rotateLeft: 1, rotateRight: 1, flipHorizontal: 1, flipVertical: 1,
+          },
+        });
+      }
     }
+  });
+
+  onDestroy(() => {
+    if (viewer) viewer.destroy();
+    if (viewerWorkshop) viewerWorkshop.destroy();
   });
 
   function handleImageClick(index) {
@@ -261,6 +313,9 @@
       viewer.view(index);
     }
   }
+
+  const prevSlideWorkshop = () => swiperWorkshopEl?.swiper?.slidePrev();
+  const nextSlideWorkshop = () => swiperWorkshopEl?.swiper?.slideNext();
 </script>
 
 <!-- Tab Header -->
@@ -349,6 +404,77 @@
 {:else}
   <!-- Tab 3: Workshop Facility Section -->
   <div class="space-y-12">
+    <!-- Gallery Carousel -->
+    <section class="space-y-4">
+      <div class="relative">
+        <div bind:this={galleryWorkshopEl} class="hidden">
+          {#each workshopImages as item}
+            <img
+              src={`/images/Workshop/${item.image}`}
+              data-src={`/images/Workshop/${item.image}`}
+              alt={item.title}
+            />
+          {/each}
+        </div>
+      
+        <button
+          onclick={prevSlideWorkshop}
+          aria-label="Previous slide"
+          class="btn btn-circle btn-sm md:btn-md absolute -left-4 md:-left-6 top-[calc(50%-1.5rem)] -translate-y-1/2 z-10 bg-base-100/80 hover:bg-base-100 border-base-300 shadow-md"
+        >
+          <Fa icon={faChevronLeft} class="w-4 h-4 md:w-5 md:h-5" />
+        </button>
+      
+        <button
+          onclick={nextSlideWorkshop}
+          aria-label="Next slide"
+          class="btn btn-circle btn-sm md:btn-md absolute -right-4 md:-right-6 top-[calc(50%-1.5rem)] -translate-y-1/2 z-10 bg-base-100/80 hover:bg-base-100 border-base-300 shadow-md"
+        >
+          <Fa icon={faChevronRight} class="w-4 h-4 md:w-5 md:h-5" />
+        </button>
+      
+        <swiper-container
+          bind:this={swiperWorkshopEl}
+          class="w-full pb-4 pt-2 custom-swiper"
+          init="false"
+        >
+          {#each workshopImages as item, i}
+            <swiper-slide class="h-auto">
+              <div
+                class="bg-base-200/50 border-base-300 flex h-full flex-col items-center justify-between gap-4 rounded-lg border p-6 text-center hover:bg-base-200 transition-colors"
+              >
+                <div
+                  class="w-full aspect-[1/1.4] relative overflow-hidden rounded border border-base-300 cursor-pointer group"
+                  onclick={() => {
+                    if (viewerWorkshop) {
+                      viewerWorkshop.view(i);
+                    }
+                  }}
+                  onkeydown={(e) => {
+                    if (e.key === "Enter" && viewerWorkshop) {
+                      viewerWorkshop.view(i);
+                    }
+                  }}
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    src={`/images/Workshop/${item.image}`}
+                    alt={item.title}
+                    class="w-full h-full object-cover transition-transform group-hover:scale-105"
+                  />
+                  <div
+                    class="absolute inset-0 bg-base-300/0 group-hover:bg-base-300/20 transition-colors flex items-center justify-center"
+                  >
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+          {/each}
+        </swiper-container>
+      </div>
+    </section>
+
     <!-- Facility & Logistics Overview -->
     <section class="space-y-4">
       <h2
@@ -573,3 +699,14 @@
     </section>
   </div>
 {/if}
+
+<style>
+  .custom-swiper {
+    --swiper-pagination-color: var(--fallback-p, oklch(var(--p)));
+    --swiper-pagination-bottom: 0px;
+  }
+  :global(.custom-swiper::part(pagination)) {
+    position: relative;
+    margin-top: 1rem;
+  }
+</style>
