@@ -14,7 +14,7 @@ function langHref(targetLang: Lang) {
   let base = currentPath.replace(/^\/(en|id)(\/|$)/, "/");
   base = base.replace(/\/+$/, "") || "/";
   
-  if (targetLang === "en") return base;
+  if (targetLang === "en") return base === "/" ? "/" : `${base}/`;
   return base === "/" ? "/id/" : `/id${base}/`;
 }
 
