@@ -1,42 +1,37 @@
-@import "tailwindcss";
 @import "@fontsource/ibm-plex-sans";
 @import "@fontsource/ibm-plex-sans/500.css";
 @import "@fontsource/ibm-plex-sans/600.css";
 @import "@fontsource/ibm-plex-sans/700.css";
 @import "@fontsource/ibm-plex-mono";
-@plugin "daisyui";
-@plugin "daisyui/theme" {
-  name: "promatcon";
-  default: true;
-  prefersdark: false;
-  color-scheme: light;
 
-  --color-primary: #12538b;
-  --color-primary-content: #ffffff;
-  --color-secondary: #02c05e;
-  --color-secondary-content: #ffffff;
-  --color-accent: #fece14;
-  --color-accent-content: #111827;
-  --color-neutral: #1f2937;
-  --color-neutral-content: #ffffff;
-  --color-base-100: #ffffff;
-  --color-base-200: #f8fafc;
-  --color-base-300: #e2e8f0;
-  --color-base-content: #0f172a;
-  --color-info: #0284c7;
-  --color-info-content: #ffffff;
-  --color-success: #02c05e;
-  --color-success-content: #ffffff;
-  --color-warning: #d97706;
-  --color-warning-content: #ffffff;
-  --color-error: #dc2626;
-  --color-error-content: #ffffff;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  --radius-selector: 0.25rem;
-  --radius-field: 0.25rem;
-  --radius-box: 0.5rem;
-
-  --border: 1px;
+@supports not (color: oklch(0% 0 0)) {
+  [data-theme="promatcon"],
+  :root {
+    --fallback-p: #12538b;
+    --fallback-pc: #ffffff;
+    --fallback-s: #02c05e;
+    --fallback-sc: #ffffff;
+    --fallback-a: #fece14;
+    --fallback-ac: #111827;
+    --fallback-n: #1f2937;
+    --fallback-nc: #ffffff;
+    --fallback-b1: #ffffff;
+    --fallback-b2: #f8fafc;
+    --fallback-b3: #e2e8f0;
+    --fallback-bc: #0f172a;
+    --fallback-in: #0284c7;
+    --fallback-inc: #ffffff;
+    --fallback-su: #02c05e;
+    --fallback-suc: #ffffff;
+    --fallback-wa: #d97706;
+    --fallback-wac: #ffffff;
+    --fallback-er: #dc2626;
+    --fallback-erc: #ffffff;
+  }
 }
 
 body {

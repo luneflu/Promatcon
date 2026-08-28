@@ -1,7 +1,6 @@
 // @ts-check
 import { defineConfig, fontProviders } from "astro/config";
-import tailwindcss from "@tailwindcss/vite";
-
+import tailwind from '@astrojs/tailwind';
 import svelte from "@astrojs/svelte";
 import { i18n } from "astro-i18n-aut/integration";
 
@@ -34,7 +33,6 @@ export default defineConfig({
   ],
 
   vite: {
-    plugins: [tailwindcss()],
     optimizeDeps: {
       include: ["swiper/element/bundle", "viewerjs", "apextree"],
     },
@@ -44,5 +42,5 @@ export default defineConfig({
   build: {
     format: "directory",
   },
-  integrations: [svelte(), i18n({ locales, defaultLocale })],
+  integrations: [svelte(), tailwind(), i18n({ locales, defaultLocale })],
 });

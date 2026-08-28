@@ -13,22 +13,25 @@
     "format": "prettier . --write"
   },
   "dependencies": {
+    "@astrojs/tailwind": "^6.0.2",
     "@fontsource/ibm-plex-mono": "^5.3.0",
     "@fontsource/ibm-plex-sans": "^5.3.0",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@tailwindcss/vite": "^4.3.3",
-    "@tanstack/svelte-table": "^9.1.2",
-    "@tanstack/table-core": "^9.1.2",
+    "@tanstack/svelte-table": "^9.2.3",
+    "@tanstack/table-core": "^9.2.3",
     "apextree": "^2.1.0",
-    "astro": "^7.2.1",
+    "astro": "^7.2.8",
     "astro-fontawesome": "^0.1.1",
     "astro-i18n-aut": "^0.8.0",
-    "daisyui": "^5.7.16",
+    "autoprefixer": "^10.5.4",
+    "daisyui": "^4.12.24",
     "svelte-fa": "^4.0.4",
-    "swiper": "^14.1.0",
-    "tailwindcss": "^4.3.3",
-    "viewerjs": "^1.11.8"
+    "swiper": "^14.2.0",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^7.0.2",
+    "viewerjs": "^1.12.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
@@ -36,7 +39,7 @@
     "prettier": "3.9.6",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.8.1",
-    "svelte": "^5.56.9",
+    "svelte": "^5.56.10",
     "typescript": "^5.9.3"
   }
 }
